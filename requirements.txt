@@ -12,7 +12,6 @@ search_engine_parser
 bs4
 ffmpeg
 ffprobe
-avprobe
 beautifulsoup4
 requests==2.20.0
 python-telegram-bot==12.8
@@ -27,7 +26,6 @@ pynewtonmath
 spongemock
 zalgo-text
 geopy
-nltk
 psutil
 aiohttp>=2.2.5
 Pillow>=4.2.0
