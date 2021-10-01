@@ -11,7 +11,7 @@ youtube_search
 search_engine_parser
 bs4
 ffmpeg
-avconv
+ffprobe
 beautifulsoup4
 requests==2.20.0
 python-telegram-bot==12.8
