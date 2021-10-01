@@ -14,7 +14,7 @@ from pyrogram import filters
 from MashaRoBot import BOT_ID
 from MashaRoBot.helper_extra.aichat import add_chat, get_session, remove_chat
 from MashaRoBot.pyrogramee.pluginshelper import admins_only, edit_or_reply
-from MashaRoBot import pbot as innexia
+from MashaRoBot import pbot as lovely
 
 translator = google_translator()
 import requests
@@ -47,7 +47,7 @@ en_chats = []
 )
 @admins_only
 async def hmm(_, message):
-    global innexia_chats
+    global lovely_chats
     if len(message.command) != 2:
         await message.reply_text(
             "I only recognize `/chatbot on` and /chatbot `off only`"
@@ -69,7 +69,7 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("innexia AI Was Not Activated In This Chat")
+            await lel.edit("lovely AI Was Not Activated In This Chat")
             return
         await lel.edit(
             f"lovely AI Successfully Deactivated For Users In The Chat {message.chat.id}"
@@ -88,7 +88,7 @@ async def hmm(_, message):
         )
 
 
-@innexia.on_message(
+@lovely.on_message(
     filters.text
     & filters.reply
     & ~filters.bot
@@ -114,8 +114,8 @@ async def hmm(client, message):
         message.continue_propagation()
     if chat_id in en_chats:
         test = msg
-        test = test.replace("innexia", "Aco")
-        test = test.replace("innexia", "Aco")
+        test = test.replace("lovely", "Aco")
+        test = test.replace("lovely", "Aco")
         URL = "https://api.affiliateplus.xyz/api/chatbot?message=hi&botname=@Lovelyr_obot&ownername=@aboutvedmat"
 
         try:
@@ -274,7 +274,7 @@ async def inuka(client, message):
         return
 
 
-@innexia.on_message(
+@lovely.on_message(
     filters.regex("lovely|lovely|lovely|lovely|lovely")
     & ~filters.bot
     & ~filters.via_bot
@@ -348,7 +348,7 @@ async def inuka(client, message):
         except Exception:
             return
     try:
-        await innexia.send_chat_action(message.chat.id, "typing")
+        await lovely.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError:
         return
