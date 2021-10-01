@@ -4,7 +4,12 @@ lxml
 wget
 gtts
 ffmpeg-python
-youtube-dl -U
+youtube-dl
+youtube_dl
+youtube_search_python
+youtube_search
+search_engine_parser
+bs4
 ffmgeg
 beautifulsoup4
 requests==2.20.0
