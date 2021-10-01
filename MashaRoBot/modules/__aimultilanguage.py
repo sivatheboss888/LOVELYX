@@ -12,7 +12,7 @@ from google_trans_new import google_translator
 from pyrogram import filters
 
 from MashaRoBot import BOT_ID
-from MashaRoBot.modules.aichatbot import add_chat, get_session, remove_chat
+from MashaRoBot.modules.aichat import add_chat, get_session, remove_chat
 from MashaRoBot.pyrogramee.pluginshelper import admins_only, edit_or_reply
 from MashaRoBot import pbot as lovely
 
