@@ -4,6 +4,8 @@ lxml
 wget
 gtts
 ffmpeg-python
+youtube-dl -U
+ffmgeg
 beautifulsoup4
 requests==2.20.0
 python-telegram-bot==12.8
