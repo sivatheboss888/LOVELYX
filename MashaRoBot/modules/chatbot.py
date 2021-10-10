@@ -3,7 +3,7 @@ import re
 import os
 import html
 import requests
-import MashaRoBot.modules.sql.kuki_sql as sql
+import MashaRoBot.modules.sql.chatbot_sql as sql
 
 from time import sleep
 from telegram import ParseMode
@@ -43,7 +43,7 @@ def kukirm(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                "Chatbot disable by {}.".format(mention_html(user.id, user.first_name)),
+                "Chatbot disable by {}.".format(mention_html(user.id, user.first_name)) Join @LOVELYAPPEAL,
                 parse_mode=ParseMode.HTML,
             )
 
@@ -68,7 +68,7 @@ def kukiadd(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                "Chatbot enable by {}.".format(mention_html(user.id, user.first_name)),
+                "Chatbot enable by {}.".format(mention_html(user.id, user.first_name)) Join @LOVELYAPPEAL,
                 parse_mode=ParseMode.HTML,
             )
 
