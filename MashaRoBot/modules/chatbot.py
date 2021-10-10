@@ -3,7 +3,7 @@ import re
 import os
 import html
 import requests
-import MashaRoBot.modules.sql.chatbot_sql as sql
+import MashaRoBot.modules.sql.kuki_sql as sql
 
 from time import sleep
 from telegram import ParseMode
@@ -139,25 +139,25 @@ def list_all_chats(update: Update, context: CallbackContext):
     update.effective_message.reply_text(text, parse_mode="HTML")
 
 __help__ = """
-Chatbot utilizes the Kuki's api which allows Sophia to talk and provide a more interactive group chat experience.
+Chatbot utilizes the Kuki's api which allows Kuki to talk and provide a more interactive group chat experience.
 *Admins only Commands*:
   ➢ `/Chatbot`*:* Shows chatbot control panel
   
  Reports bugs at Kuki-api.tk
-*Powered by ItelAi* (https://github/itelai) from @KukiUpdates
+*Powered by Lovely* (https://github/itelai) from @KukiUpdates
 """
 
 __mod_name__ = "Cʜᴀᴛʙᴏᴛ💬"
 
 
-CHATBOTK_HANDLER = CommandHandler("chatbot", kuki)
-ADD_CHAT_HANDLER = CallbackQueryHandler(kukiadd, pattern=r"add_chat")
-RM_CHAT_HANDLER = CallbackQueryHandler(kukirm, pattern=r"rm_chat")
+CHATBOTK_HANDLER = CommandHandler("chatbot", kuki, run_async=True)
+ADD_CHAT_HANDLER = CallbackQueryHandler(kukiadd, pattern=r"add_chat", run_async=True)
+RM_CHAT_HANDLER = CallbackQueryHandler(kukirm, pattern=r"rm_chat", run_async=True)
 CHATBOT_HANDLER = MessageHandler(
     Filters.text & (~Filters.regex(r"^#[^\s]+") & ~Filters.regex(r"^!")
-                    & ~Filters.regex(r"^\/")), chatbot)
+                    & ~Filters.regex(r"^\/")), chatbot, run_async=True)
 LIST_ALL_CHATS_HANDLER = CommandHandler(
-    "allchats", list_all_chats, filters=CustomFilters.dev_filter)
+    "allchats", list_all_chats, filters=CustomFilters.dev_filter, run_async=True)
 
 dispatcher.add_handler(ADD_CHAT_HANDLER)
 dispatcher.add_handler(CHATBOTK_HANDLER)
