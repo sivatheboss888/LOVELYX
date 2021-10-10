@@ -43,7 +43,7 @@ def kukirm(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                "Chatbot disable by {}.".format(mention_html(user.id, user.first_name)Join @LOVELYAPPEAL),
+                "Chatbot disable by {}.".format(mention_html(user.id, user.first_name)),
                 parse_mode=ParseMode.HTML,
             )
 
@@ -68,7 +68,7 @@ def kukiadd(update: Update, context: CallbackContext) -> str:
             )
         else:
             update.effective_message.edit_text(
-                "Chatbot enable by {}.".format(mention_html(user.id, user.first_name)Join @LOVELYAPPEAL),
+                "Chatbot enable by {}.".format(mention_html(user.id, user.first_name)),
                 parse_mode=ParseMode.HTML,
             )
 
