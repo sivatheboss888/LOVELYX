@@ -12,6 +12,7 @@ psycopg2-binary
 feedparser
 ffmpeg
 hachoir
+register
 pynewtonmath
 spongemock
 zalgo-text
