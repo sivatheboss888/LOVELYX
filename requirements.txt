@@ -1,4 +1,4 @@
-futures
+future
 emoji
 lxml
 wget
@@ -14,7 +14,7 @@ ffmpeg
 ffprobe
 beautifulsoup4
 requests==2.20.0
-python-telegram-bot==13.2
+python-telegram-bot==12.8
 sqlalchemy==1.3.20
 PyDictionary==2.0.1
 psycopg2-binary
