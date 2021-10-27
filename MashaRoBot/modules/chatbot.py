@@ -126,7 +126,7 @@ def chatbot(update: Update, context: CallbackContext):
 
 def list_all_chats(update: Update, context: CallbackContext):
     chats = sql.get_all_kuki_chats()
-    text = "<b>KUKI-Enabled Chats</b>\n"
+    text = "<b>LOVELY-Enabled Chats</b>\n"
     for chat in chats:
         try:
             x = context.bot.get_chat(int(*chat))
@@ -143,8 +143,8 @@ Chatbot utilizes the Kuki's api which allows Kuki to talk and provide a more int
 *Admins only Commands*:
   ➢ `/Chatbot`*:* Shows chatbot control panel
   
- Reports bugs at Kuki-api.tk
-*Powered by Lovely* (https://github/itelai) from @KukiUpdates
+ Reports bugs at @LOVELYAPPEAL
+*Powered by Lovely* 
 """
 
 __mod_name__ = "Cʜᴀᴛʙᴏᴛ💬"
