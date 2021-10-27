@@ -266,9 +266,9 @@ async def redaura(client, message):
     result = result.replace("Aco", "Lovely")
     result = result.replace("Eliza", "@LOVELY_OBOT")
     result = result.replace("Hi~", "Hello Friend I Am @LOVELY_OBOT")
-    result = result.replace("My dear great botmaster, Daisybot Team.", "Made By @TUSHAR204")
+    result = result.replace("My dear great botmaster, Lovely Team.", "Made By @TUSHAR204")
     result = result.replace("Have the control right.", "My Father Is @TUSHAR204")
-    result = result.replace("I was created by Lyciabot Team.", "I was created by @LOVELYDEVS Team.")
+    result = result.replace("I was created by Lovely Team.", "I was created by @LOVELYDEVS Team.")
     result = result.replace("<a href=\\", "<a href =")
     result = result.replace("<\/a>", "</a>")
     red = result
