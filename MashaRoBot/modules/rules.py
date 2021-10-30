@@ -117,15 +117,7 @@ def __chat_settings__(chat_id, user_id):
     return f"This chat has had it's rules set: `{bool(sql.get_rules(chat_id))}`"
 
 
-__help__ = """
- ❍ /rules*:* get the rules for this chat.
-
-*Admins only:*
- ❍ /setrules <your rules here>*:* set the rules for this chat.
- ❍ /clearrules*:* clear the rules for this chat.
-"""
-
-__mod_name__ = "Rᴜʟᴇs🤞"
+__mod_name__ = "Rules"
 
 GET_RULES_HANDLER = CommandHandler("rules", get_rules, filters=Filters.group)
 SET_RULES_HANDLER = CommandHandler("setrules", set_rules, filters=Filters.group)
