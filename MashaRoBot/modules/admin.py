@@ -30,7 +30,6 @@ from MashaRoBot.modules.helper_funcs.alternate import send_message
 from MashaRoBot.modules.helper_funcs.alternate import typing_action
 
 
-@run_async
 @connection_status
 @bot_admin
 @can_promote
@@ -113,7 +112,6 @@ def promote(update: Update, context: CallbackContext) -> str:
     return log_message
 
 
-@run_async
 @connection_status
 @bot_admin
 @can_promote
@@ -187,7 +185,6 @@ def demote(update: Update, context: CallbackContext) -> str:
         return
 
 
-@run_async
 @user_admin
 def refresh_admin(update, _):
     try:
@@ -198,7 +195,6 @@ def refresh_admin(update, _):
     update.effective_message.reply_text("Admins cache refreshed!")
 
 
-@run_async
 @connection_status
 @bot_admin
 @can_promote
@@ -263,7 +259,6 @@ def set_title(update: Update, context: CallbackContext):
     )
 
 
-@run_async
 @bot_admin
 @user_admin
 @typing_action
@@ -301,7 +296,6 @@ def setchatpic(update, context):
         msg.reply_text("Reply to some photo or file to set new chat pic!")
 
 
-@run_async
 @bot_admin
 @user_admin
 @typing_action
@@ -321,7 +315,6 @@ def rmchatpic(update, context):
         return
 
 
-@run_async
 @bot_admin
 @user_admin
 @typing_action
@@ -351,7 +344,6 @@ def setchat_title(update, context):
         return
 
 
-@run_async
 @bot_admin
 @user_admin
 @typing_action
@@ -384,7 +376,6 @@ def set_sticker(update, context):
             "You need to reply to some sticker to set chat sticker set!")
 
 
-@run_async
 @bot_admin
 @user_admin
 @typing_action
@@ -419,7 +410,6 @@ def __chat_settings__(chat_id, user_id):
     )
 
 
-@run_async
 @bot_admin
 @can_pin
 @user_admin
@@ -461,7 +451,6 @@ def pin(update: Update, context: CallbackContext) -> str:
         return log_message
 
 
-@run_async
 @bot_admin
 @can_pin
 @user_admin
@@ -488,7 +477,6 @@ def unpin(update: Update, context: CallbackContext) -> str:
     return log_message
 
 
-@run_async
 @bot_admin
 @user_admin
 @connection_status
@@ -513,7 +501,6 @@ def invite(update: Update, context: CallbackContext):
         )
 
 
-@run_async
 @connection_status
 def adminlist(update, context):
     chat = update.effective_chat  # type: Optional[Chat]
@@ -652,33 +639,33 @@ and Automatically openned at 6 am(IST) To Prevent Night Spams.
 
 """
 
-ADMINLIST_HANDLER = DisableAbleCommandHandler("admins", adminlist)
+ADMINLIST_HANDLER = DisableAbleCommandHandler("admins", adminlist, run_async=True)
 
-PIN_HANDLER = CommandHandler("pin", pin, filters=Filters.group)
-UNPIN_HANDLER = CommandHandler("unpin", unpin, filters=Filters.group)
+PIN_HANDLER = CommandHandler("pin", pin, filters=Filters.group, run_async=True)
+UNPIN_HANDLER = CommandHandler("unpin", unpin, filters=Filters.group, run_async=True)
 
-INVITE_HANDLER = DisableAbleCommandHandler("invitelink", invite)
+INVITE_HANDLER = DisableAbleCommandHandler("invitelink", invite, run_async=True)
 
-PROMOTE_HANDLER = DisableAbleCommandHandler("promote", promote)
-DEMOTE_HANDLER = DisableAbleCommandHandler("demote", demote)
+PROMOTE_HANDLER = DisableAbleCommandHandler("promote", promote, run_async=True)
+DEMOTE_HANDLER = DisableAbleCommandHandler("demote", demote, run_async=True)
 
-SET_TITLE_HANDLER = CommandHandler("title", set_title)
+SET_TITLE_HANDLER = CommandHandler("title", set_title, run_async=True)
 ADMIN_REFRESH_HANDLER = CommandHandler(
-    "admincache", refresh_admin, filters=Filters.group
+    "admincache", refresh_admin, filters=Filters.group, run_async=True   
 )
 
-CHAT_PIC_HANDLER = CommandHandler("setgpic", setchatpic, filters=Filters.group)
+CHAT_PIC_HANDLER = CommandHandler("setgpic", setchatpic, filters=Filters.group, run_async=True)
 DEL_CHAT_PIC_HANDLER = CommandHandler(
-    "delgpic", rmchatpic, filters=Filters.group)
+    "delgpic", rmchatpic, filters=Filters.group, run_async=True)
 SETCHAT_TITLE_HANDLER = CommandHandler(
-    "setgtitle", setchat_title, filters=Filters.group
+    "setgtitle", setchat_title, filters=Filters.group, run_async=True
 )
 SETSTICKET_HANDLER = CommandHandler(
-    "setsticker", set_sticker, filters=Filters.group)
+    "setsticker", set_sticker, filters=Filters.group, run_async=True)
 SETDESC_HANDLER = CommandHandler(
     "setdescription",
     set_desc,
-    filters=Filters.group)
+    filters=Filters.group, run_async=True)
 
 dispatcher.add_handler(ADMINLIST_HANDLER)
 dispatcher.add_handler(PIN_HANDLER)
