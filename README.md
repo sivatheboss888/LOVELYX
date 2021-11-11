@@ -28,7 +28,7 @@ BEST CHANNEL FOR LOVE STATUS AND SHAYRI CLICK ON BELOW PAGE TO JOIN 🤗
 
 ## CREDITS
 
-- MAIN DEV [Mr-Dark-Prince](https://github.com/Mr-Dark-Prince)
+- [Mr-Dark-Prince](https://github.com/Mr-Dark-Prince)
 
 ▪️ [PaulSonOfLars](https://github.com/PaulSonOfLars/tgbot)
 ▪️ [Saitama](https://github.com/AnimeKaizoku)
