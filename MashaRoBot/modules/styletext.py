@@ -258,7 +258,6 @@ linedfont = [
 ]
 
 
-@run_async
 @typing_action
 def weebify(update, context):
     args = context.args
@@ -286,7 +285,6 @@ def weebify(update, context):
         message.reply_text(string)
 
 
-@run_async
 @typing_action
 def bubble(update, context):
     args = context.args
@@ -314,7 +312,6 @@ def bubble(update, context):
         message.reply_text(string)
 
 
-@run_async
 @typing_action
 def fbubble(update, context):
     args = context.args
@@ -342,7 +339,6 @@ def fbubble(update, context):
         message.reply_text(string)
 
 
-@run_async
 @typing_action
 def square(update, context):
     args = context.args
@@ -370,7 +366,6 @@ def square(update, context):
         message.reply_text(string)
 
 
-@run_async
 @typing_action
 def fsquare(update, context):
     args = context.args
@@ -398,7 +393,6 @@ def fsquare(update, context):
         message.reply_text(string)
 
 
-@run_async
 @typing_action
 def blue(update, context):
     args = context.args
@@ -426,7 +420,6 @@ def blue(update, context):
         message.reply_text(string)
 
 
-@run_async
 @typing_action
 def latin(update, context):
     args = context.args
@@ -454,7 +447,6 @@ def latin(update, context):
         message.reply_text(string)
 
 
-@run_async
 @typing_action
 def lined(update, context):
     args = context.args
@@ -492,14 +484,14 @@ __help__ = """
 """
 __mod_name__ = "Sᴛʏʟᴇᴛᴇxᴛ😎"
 
-WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify)
-BUBBLE_HANDLER = DisableAbleCommandHandler("bubble", bubble)
-FBUBBLE_HANDLER = DisableAbleCommandHandler("fbubble", fbubble)
-SQUARE_HANDLER = DisableAbleCommandHandler("square", square)
-FSQUARE_HANDLER = DisableAbleCommandHandler("fsquare", fsquare)
-BLUE_HANDLER = DisableAbleCommandHandler("blue", blue)
-LATIN_HANDLER = DisableAbleCommandHandler("latin", latin)
-LINED_HANDLER = DisableAbleCommandHandler("lined", lined)
+WEEBIFY_HANDLER = DisableAbleCommandHandler("weebify", weebify, run_async=True)
+BUBBLE_HANDLER = DisableAbleCommandHandler("bubble", bubble, run_async=True)
+FBUBBLE_HANDLER = DisableAbleCommandHandler("fbubble", fbubble, run_async=True)
+SQUARE_HANDLER = DisableAbleCommandHandler("square", square, run_async=True)
+FSQUARE_HANDLER = DisableAbleCommandHandler("fsquare", fsquare, run_async=True)
+BLUE_HANDLER = DisableAbleCommandHandler("blue", blue, run_async=True)
+LATIN_HANDLER = DisableAbleCommandHandler("latin", latin, run_async=True)
+LINED_HANDLER = DisableAbleCommandHandler("lined", lined, run_async=True)
 
 dispatcher.add_handler(WEEBIFY_HANDLER)
 dispatcher.add_handler(BUBBLE_HANDLER)
