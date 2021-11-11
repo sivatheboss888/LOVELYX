@@ -18,7 +18,7 @@ Your beloved:-
 
 [LOVELY DEVS](https://t.me/LOVELYDEVS)
 
-#Owner of Lovely project [Tushar](https://telegram.me/Tushar204)
+Owner of Lovely project [🇷 ØΜΔŇŦIĆ❤️ 🇸 ĦΔ¥ΔŘ 🇹 ỮŞĦΔŘ](https://telegram.me/Tushar204)
 [![Tushar](https://telegra.ph/file/2fee58297ffd8632f49e9.jpg)](https://telegram.me/TUSHAR204)
 
 BEST CHANNEL FOR LOVE STATUS AND SHAYRI CLICK ON BELOW PAGE TO JOIN 🤗
