@@ -71,11 +71,10 @@ redis
 aiofiles
 envparse
 pyromod
-
+nudepy==0.5.1
 
 #profanity (Credits to Julia)
 better_profanity
 textblob 
-nudepy
 
 motor
