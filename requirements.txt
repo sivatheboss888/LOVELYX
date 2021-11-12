@@ -71,7 +71,7 @@ redis
 aiofiles
 envparse
 pyromod
-nudepy==0.5.1
+nudepy
 nekos
 
 #profanity (Credits to Julia)
