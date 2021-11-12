@@ -143,10 +143,10 @@ AFK_REGEX_HANDLER = DisableAbleMessageHandler(
 NO_AFK_HANDLER = MessageHandler(Filters.all & Filters.group, no_longer_afk, run_async=True)
 AFK_REPLY_HANDLER = MessageHandler(Filters.all & Filters.group, reply_afk, run_async=True)
 
-dispatcher.add_handler(AFK_HANDLER, AFK_GROUP, run_async=True)
-dispatcher.add_handler(AFK_REGEX_HANDLER, AFK_GROUP, run_async=True)
-dispatcher.add_handler(NO_AFK_HANDLER, AFK_GROUP, run_async=True)
-dispatcher.add_handler(AFK_REPLY_HANDLER, AFK_REPLY_GROUP, run_async=True)
+dispatcher.add_handler(AFK_HANDLER, AFK_GROUP)
+dispatcher.add_handler(AFK_REGEX_HANDLER, AFK_GROUP)
+dispatcher.add_handler(NO_AFK_HANDLER, AFK_GROUP)
+dispatcher.add_handler(AFK_REPLY_HANDLER, AFK_REPLY_GROUP)
 
 __mod_name__ = "Aғᴋ⌨"
 __command_list__ = ["afk"]
