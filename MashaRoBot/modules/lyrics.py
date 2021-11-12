@@ -1,7 +1,6 @@
 import asyncio
 import io
 import os
-import lyricsgenius
 import requests
 
 from pyrogram import filters
