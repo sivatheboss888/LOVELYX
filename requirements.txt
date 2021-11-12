@@ -72,7 +72,6 @@ aiofiles
 envparse
 pyromod
 nudepy
-nekos==2.6.2
 
 #profanity (Credits to Julia)
 better_profanity
