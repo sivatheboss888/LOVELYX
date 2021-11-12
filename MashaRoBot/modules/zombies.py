@@ -1,13 +1,12 @@
 import asyncio
-from asyncio import sleep
 
+from asyncio import sleep
 from telethon import events
 from telethon.errors import ChatAdminRequiredError, UserAdminInvalidError
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChatBannedRights, ChannelParticipantsAdmins
 
 from MashaRoBot import telethn, OWNER_ID, DEV_USERS, DRAGONS, DEMONS
-from MashaRoBot.events import register
 
 # =================== CONSTANT ===================
 
@@ -50,7 +49,7 @@ async def is_administrator(user_id: int, message):
 
 
 
-@telethn.on(events.NewMessage(pattern=f"^[!/]zombies ?(.*)"))
+@telethn.on(events.NewMessage(pattern="^[!/]zombies ?(.*)"))
 async def zombies(event):
     """ For .zombies command, list all the zombies in a chat. """
 
