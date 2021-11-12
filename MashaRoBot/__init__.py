@@ -7,6 +7,8 @@ import spamwatch
 import telegram.ext as tg
 from redis import StrictRedis
 from pyrogram import Client, errors
+from pyrogram.errors.exceptions.bad_request_400 import PeerIdInvalid, ChannelInvalid
+
 from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
 from telethon import TelegramClient
 
