@@ -2,7 +2,7 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl import functions, types
 
 from MashaRoBot.events import register as lovely
-from MashaRoBot import telethn, qbot
+from MashaRoBot import telethn
 
 
 async def is_register_admin(chat, user):
