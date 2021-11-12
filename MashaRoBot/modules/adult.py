@@ -2,7 +2,7 @@ import os
 import html
 import nekos
 import requests
-import Cutiepii_Robot.modules.sql.nsfw_sql as sql
+import MashaRoBot.modules.sql.nsfw_sql as sql
 
 from time import sleep
 from PIL import Image
@@ -11,10 +11,10 @@ from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CommandHandler, run_async, CallbackContext
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
-from Cutiepii_Robot import dispatcher, updater
-from Cutiepii_Robot.modules.log_channel import gloggable
-from Cutiepii_Robot.modules.helper_funcs.chat_status import user_admin
-from Cutiepii_Robot.modules.helper_funcs.filters import CustomFilters
+from MashaRoBot import dispatcher, updater
+from MashaRoBot.modules.log_channel import gloggable
+from MashaRoBot.modules.helper_funcs.chat_status import user_admin
+from MashaRoBot.modules.helper_funcs.filters import CustomFilters
 
 @user_admin
 @gloggable
