@@ -29,7 +29,7 @@ async def is_register_admin(chat, user):
     return None
 
 
-@register(pattern=r"^/phone (.*)")
+@register(pattern="^/phone (.*)")
 async def phone(event):
     if (
         event.is_group
