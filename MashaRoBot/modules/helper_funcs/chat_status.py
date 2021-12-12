@@ -173,7 +173,7 @@ def stats_plus(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "Yuzuki stats is just for Dev User",
+                "Lovely stats is just for Dev User",
             )
 
     return is_sudo_plus_func
