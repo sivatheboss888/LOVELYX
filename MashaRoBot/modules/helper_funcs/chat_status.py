@@ -44,6 +44,9 @@ def user_can_promote(chat: Chat, user: User, bot_id: int) -> bool:
 def user_can_pin(chat: Chat, user: User, bot_id: int) -> bool:
     return chat.get_member(user.id).can_pin_messages
 
+def user_can_manage_voice_chats(chat: Chat, user : User, bot_id: int) -> bool:
+return chat.get_member(user.id).can_manage_voice_chats
+
 def is_user_admin(chat: Chat, user_id: int, member: ChatMember = None) -> bool:
     if (
         chat.type == "private"
@@ -379,6 +382,28 @@ def can_restrict(func):
         )
 
     return restrict_rights
+
+
+def can_manage_voice_chats(func):
+    @wraps(func)
+    def pin_rights(update: Update, context: CallbackContext, *args, **kwargs):
+        bot = context.bot
+        chat = update.effective_chat
+        update_chat_title = chat.title
+        message_chat_title = update.effective_message.chat.title
+
+        if update_chat_title == message_chat_title:
+            cant_manage_voice_chats = (
+                "I don't have voice chat right!\nMake sure I'm admin and can give voice chat right."
+            )
+        else:
+            cant_manage_voice_chats = f"I don't have voice chat right in <b>{update_chat_title}</b>!\nMake sure I'm admin and can give voice chat right."
+
+        if chat.get_member(bot.id).can_manage_voice_chats:
+            return func(update, context, *args, **kwargs)
+        update.effective_message.reply_text(can_manage_voice_chats, parse_mode=ParseMode.HTML)
+
+    return voice_chats_rights
 
 
 def user_can_ban(func):
