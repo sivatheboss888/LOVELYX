@@ -23,6 +23,7 @@ from MashaRoBot.modules.helper_funcs.chat_status import (
     user_can_changeinfo,
     user_can_pin,
     user_can_promote,
+    can_manage_voice_chats,
     ADMIN_CACHE,
 )
 
