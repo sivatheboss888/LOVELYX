@@ -22,8 +22,7 @@ from MashaRoBot.modules.helper_funcs.chat_status import (
     user_admin,
     user_can_changeinfo,
     user_can_pin,
-    user_can_promote,
-    can_manage_voice_chats,
+    user_can_promote,    
     ADMIN_CACHE,
 )
 
@@ -1029,7 +1028,7 @@ __help__ = """
   ❍ `/demote (user)`*:* Demotes the user from admin.
   ❍ `/lowpromote`*:* Promote a member with low rights
   ❍ `/midpromote`*:* Promote a member with mid rights
-  ❍ `/highpromote`*:* Promote a member with max rights
+  ❍ `/fullpromote`*:* Promote a member with max rights
   ❍ `/lowdemote`*:* Demote an admin to low permissions
   ❍ `/middemote`*:* Demote an admin to mid permissions
  
