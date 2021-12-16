@@ -111,7 +111,7 @@ HELP_STRINGS = """
 ༆*LOVELY comes with many special features in it*༆
 ꧁*CHECK ALL BUTTON BELOW TO EXPLORE EVERY COMMANDS OF LOVELY*꧂
 𖣘 *All commands can either be used with* `/` *or* `!`.
-𖣘 *If you facing any issue or find any bugs in any command then you can report it in @LOVELYAPPEAL* [.](https://telegra.ph/file/cbbf01ed6f013ce07d54f.jpg)
+𖣘 *If you facing any issue or find any bugs in any command then you can report it in @LOVELYAPPEAL* 
 """
 
 
@@ -391,14 +391,22 @@ def Source_about_callback(update: Update, context: CallbackContext):
     if query.data == "source_":
         query.message.edit_text(
             text=""" Hi..🤗 I'm *lovely*
-                 \nHere is the [Source Code](https://t.me/LOVELYAPPEL) .""",
+                 \nHere is the [ᴛᴇᴀᴍ ʟᴏᴠᴇʟʏ](https://t.me/LOVELYAPPEAL) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="source_back")
-                 ]
+                    InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url="t.me/LOVELYAPPEAL"),
+                    InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url="t.me/LOVELY_ROBOTS"),
+                 ],
+                 [  
+                    InlineKeyboardButton(text="ʟᴏᴠᴇʟʏ ɴᴇᴛᴡᴏʀᴍ", url="t.me/LOVELY_NETWORK"),
+                    InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="t.me/TUSHAR204"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Gᴏ ʙᴀᴄᴋ", callback_data="source_back"),
+                 ],
                 ]
             ),
         )
