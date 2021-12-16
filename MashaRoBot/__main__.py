@@ -90,14 +90,14 @@ buttons = [
     [
         InlineKeyboardButton(
             text="ᴀᴅᴅ ʟᴏᴠᴇʟʏ ᴛᴏ ɢʀᴏᴜᴘ", url="t.me/LOVELYR_OBOT?startgroup=true"),
-    ],            
-    [   
-        InlineKeyboardButton(text="ᴛᴇᴀᴍ ʟᴏᴠᴇʟʏ", url="https://t.me/TEAM_LOV3LY"
-    ),
-    ],
+    ],           
     [  
         InlineKeyboardButton(text="ʙᴀsɪᴄ ɢᴜɪᴅᴇ", callback_data="source_"),           
         InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),    
+    ],
+    [   
+        InlineKeyboardButton(text="ᴛᴇᴀᴍ ʟᴏᴠᴇʟʏ", url="https://t.me/TEAM_LOV3LY"
+    ),
     ],
 ]
 
@@ -412,7 +412,8 @@ def Source_about_callback(update: Update, context: CallbackContext):
                  ),
                  ],
                  [
-                    InlineKeyboardButton(text="Gᴏ ʙᴀᴄᴋ", callback_data="source_back"),
+                    InlineKeyboardButton(text="Gᴏ ʙᴀᴄᴋ", callback_data="source_back"
+                 ),
                  ],
                 ]
             ),
