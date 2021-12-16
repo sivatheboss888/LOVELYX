@@ -89,24 +89,14 @@ Hello I'm 𝕷𝖔𝖛𝖊𝖑𝖞 𝕽𝖔𝖇𝖔𝖙 ,
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ Aᴅᴅ ʟᴏᴠᴇʟʏ ᴛᴏ ɢʀᴏᴜᴘ ➕️", url="t.me/LOVELYR_OBOT?startgroup=true"),
+            text="➕️ ᴀᴅᴅ ʟᴏᴠᴇʟʏ ᴛᴏ ɢʀᴏᴜᴘ ➕️", url="t.me/LOVELYR_OBOT?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ℹ️Aʙᴏᴜᴛ", callback_data="masha_"),
-        InlineKeyboardButton(text="🆘Hᴇʟᴘ", callback_data="help_back"),
-    ],
-    [
-        InlineKeyboardButton(
-            text="✨Lᴏᴠᴇʟʏ ʟᴏɢs✨", url="t.me/LOV3LYLOGS"),
-        InlineKeyboardButton(
-            text="👥Sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ👥", url="https://t.me/LOVELYAPPEAL"),
-    ],
-    [  
-        InlineKeyboardButton(text="😈Lᴏᴠᴇʟʏ ᴅᴇᴠs😈", url="https://t.me/LOVELY_DEVS"
-    ),
-    ],     
+        InlineKeyboardButton(text="ℹ️ᴀʙᴏᴜᴛ", callback_data="masha_"),
+        InlineKeyboardButton(text="🆘ʜᴇʟᴘ", callback_data="help_back"),
+    ],         
     [   
-        InlineKeyboardButton(text="🔔Uᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ🔔", url="https://t.me/ABOUTVEDMAT"
+        InlineKeyboardButton(text="❤️ᴛᴇᴀᴍ ʟᴏᴠᴇʟʏ❤️", url="https://t.me/TEAM_LOV3LY"
     ),
     ],
 ]
