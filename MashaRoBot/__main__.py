@@ -92,12 +92,8 @@ buttons = [
             text="ᴀᴅᴅ ʟᴏᴠᴇʟʏ ᴛᴏ ɢʀᴏᴜᴘ", url="t.me/LOVELYR_OBOT?startgroup=true"),
     ],
     [  
-        InlineKeyboardButton(text="ɢᴜɪᴅ", callback_data="source_"     
-    ),
-    ],
-    [ 
-        InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"
-    ),
+        InlineKeyboardButton(text="ʙᴀsɪᴄ ɢᴜɪᴅᴇ", callback_data="source_"),           
+        InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),    
     ],        
     [   
         InlineKeyboardButton(text="ᴛᴇᴀᴍ ʟᴏᴠᴇʟʏ", url="https://t.me/TEAM_LOV3LY"
@@ -408,7 +404,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
                     InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url="t.me/LOVELY_ROBOTS"),
                  ],
                  [  
-                    InlineKeyboardButton(text="ʟᴏᴠᴇʟʏ ɴᴇᴛᴡᴏʀᴍ", url="t.me/LOVELY_NETWORK"),
+                    InlineKeyboardButton(text="ʟᴏᴠᴇʟʏ ɴᴇᴛᴡᴏʀᴋ", url="t.me/LOVELY_NETWORK"),
                     InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="t.me/TUSHAR204"),
                  ],
                  [ 
