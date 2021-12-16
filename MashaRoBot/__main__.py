@@ -89,18 +89,18 @@ Hello I'm 𝕷𝖔𝖛𝖊𝖑𝖞 𝕽𝖔𝖇𝖔𝖙 ,
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ ʟᴏᴠᴇʟʏ ᴛᴏ ɢʀᴏᴜᴘ ➕️", url="t.me/LOVELYR_OBOT?startgroup=true"),
+            text="ᴀᴅᴅ ʟᴏᴠᴇʟʏ ᴛᴏ ɢʀᴏᴜᴘ", url="t.me/LOVELYR_OBOT?startgroup=true"),
     ],
-    [
-        InlineKeyboardButton(text="ℹ️ᴀʙᴏᴜᴛ", callback_data="masha_"),
-        InlineKeyboardButton(text="🆘ʜᴇʟᴘ", callback_data="help_back"),
-    ],    
-    [ 
-        InlineKeyboardButton(text="Tᴇsᴛ", callback_data="source_"
+    [  
+        InlineKeyboardButton(text="ɢᴜɪᴅ", callback_data="source_"     
     ),
     ],
+    [ 
+        InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"
+    ),
+    ],        
     [   
-        InlineKeyboardButton(text="❤️ᴛᴇᴀᴍ ʟᴏᴠᴇʟʏ❤️", url="https://t.me/TEAM_LOV3LY"
+        InlineKeyboardButton(text="ᴛᴇᴀᴍ ʟᴏᴠᴇʟʏ", url="https://t.me/TEAM_LOV3LY"
     ),
     ],
 ]
@@ -390,7 +390,15 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *lovely*
+            text=""" ℹ️ I'm *LOVELY*, a powerful group management bot built to help you manage your group easily.
+                 ❍ I can restrict users.
+                 ❍ I can greet users with customizable welcome messages and even set a group's rules.
+                 ❍ I have an advanced anti-flood system.
+                 ❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
+                 ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
+                 ❍ I check for admins' permissions before executing any command and more stuffs
+                 \n_Lovely's licensed under the GNU General Public License v3.0_                 
+                 If you have any question about Lovely, let us know at @LOVELYAPPEAL.""",
                  \nHere is the [ᴛᴇᴀᴍ ʟᴏᴠᴇʟʏ](https://t.me/LOVELYAPPEAL) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
@@ -403,6 +411,10 @@ def Source_about_callback(update: Update, context: CallbackContext):
                  [  
                     InlineKeyboardButton(text="ʟᴏᴠᴇʟʏ ɴᴇᴛᴡᴏʀᴍ", url="t.me/LOVELY_NETWORK"),
                     InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="t.me/TUSHAR204"),
+                 ],
+                 [ 
+                    InlineKeyboardButton(text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://github.com/attitudeking1/LOVELYX"
+                 ),
                  ],
                  [
                     InlineKeyboardButton(text="Gᴏ ʙᴀᴄᴋ", callback_data="source_back"),
