@@ -103,7 +103,7 @@ buttons = [
         InlineKeyboardButton(text="❤️ᴛᴇᴀᴍ ʟᴏᴠᴇʟʏ❤️", url="https://t.me/TEAM_LOV3LY"
     ),
     ],
-]"
+]
 
 
 
