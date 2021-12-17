@@ -150,49 +150,21 @@ buttons = [
 
         InlineKeyboardButton(
 
-            text="➕️ Aᴅᴅ ʟᴏᴠᴇʟʏ ᴛᴏ ɢʀᴏᴜᴘ ➕️", url="t.me/LOVELYR_OBOT?startgroup=true"),
+            text="ᴋɪᴅɴᴀᴘ ᴍᴇ", url="t.me/LOVELYR_OBOT?startgroup=true"),
 
     ],
 
     [
 
-        InlineKeyboardButton(text="ℹ️Aʙᴏᴜᴛ", callback_data="masha_"),
+        InlineKeyboardButton(text="ʙᴀsɪᴄ ɢᴜɪᴅᴇ", callback_data="masha_"),
 
-        InlineKeyboardButton(text="🆘Hᴇʟᴘ", callback_data="help_back"),
-
-    ],
-
-    [
-
-        InlineKeyboardButton(
-
-            text="✨Lᴏᴠᴇʟʏ ʟᴏɢs✨", url="t.me/LOV3LYLOGS"),
-
-        InlineKeyboardButton(
-
-            text="👥Sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ👥", url="https://t.me/LOVELYAPPEAL"),
+        InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
 
     ],
-
-    [  
-
-        InlineKeyboardButton(text="😈Lᴏᴠᴇʟʏ ᴅᴇᴠs😈", url="https://t.me/LOVELY_DEVS"
-
-    ),
-
-    ], 
-
-    [
-
-        InlineKeyboardButton(text="❤️Lᴏᴠᴇ sᴛᴀᴛᴜs❤️", url="https://t.me/shayri_of_loves"
-
-    ), 
-
-    ],
-
+   
     [   
 
-        InlineKeyboardButton(text="🔔Uᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ🔔", url="https://t.me/ABOUTVEDMAT"
+        InlineKeyboardButton(text="ᴛᴇᴀᴍ ʟᴏᴠᴇʟʏ", url="https://t.me/TEAM_LOV3LY"
 
     ),
 
@@ -617,21 +589,12 @@ def Masha_about_callback(update: Update, context: CallbackContext):
             text=""" ℹ️ I'm *LOVELY*, a powerful group management bot built to help you manage your group easily.
 
 ❍ I can restrict users.
-
 ❍ I can greet users with customizable welcome messages and even set a group's rules.
-
 ❍ I have an advanced anti-flood system.
-
 ❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-
 ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-
 ❍ I check for admins' permissions before executing any command and more stuffs
-
 \n_Lovely's licensed under the GNU General Public License v3.0_
-
-Here is the [💾Repository](https://t.me/LOVELYAPPEAL).
-
 If you have any question about Lovely, let us know at @LOVELYAPPEAL.""",
 
             parse_mode=ParseMode.MARKDOWN,
