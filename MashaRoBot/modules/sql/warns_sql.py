@@ -1,7 +1,8 @@
 import threading
 
 from MashaRoBot.modules.sql import BASE, SESSION
-from sqlalchemy import Boolean, Column, Integer, String, UnicodeText, distinct, func
+from sqlalchemy import Boolean, Column, String, UnicodeText, distinct, func
+from sqlalchemy import BigInteger as Integer
 from sqlalchemy.dialects import postgresql
 
 
