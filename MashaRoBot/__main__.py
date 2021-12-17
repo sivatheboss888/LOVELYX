@@ -786,8 +786,8 @@ def get_help(update: Update, context: CallbackContext):
                     [
                         InlineKeyboardButton(
                             text="Support Chat 📢 ",
-                            url="https://t.me/LOVELYAPPEAL"),
-                        )
+                            url="https://t.me/LOVELYAPPEAL"
+                        ),
                     ],
 
                 ]
