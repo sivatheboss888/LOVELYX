@@ -316,7 +316,7 @@ def start(update: Update, context: CallbackContext):
 
                     InlineKeyboardMarkup(
 
-                        [[InlineKeyboardButton(text="⬅️ BACK", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_back")]]
 
                     ),
 
@@ -511,7 +511,7 @@ def help_button(update, context):
 
                 reply_markup=InlineKeyboardMarkup(
 
-                    [[InlineKeyboardButton(text="「 GO BACK 」", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_back")]]
 
                 ),
 
@@ -637,7 +637,7 @@ If you have any question about Lovely, let us know at @LOVELYAPPEAL.""",
 
                  [
 
-                    InlineKeyboardButton(text="Back", callback_data="masha_back")
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="masha_back")
 
                  ]
 
@@ -685,7 +685,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
 
                  [
 
-                    InlineKeyboardButton(text="Go Back", callback_data="source_back")
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="source_back")
 
                  ]
 
@@ -814,7 +814,7 @@ def get_help(update: Update, context: CallbackContext):
 
             InlineKeyboardMarkup(
 
-                [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_back")]]
 
             ),
 
@@ -944,7 +944,7 @@ def settings_button(update: Update, context: CallbackContext):
 
                             InlineKeyboardButton(
 
-                                text="Back",
+                                text="ʙᴀᴄᴋ",
 
                                 callback_data="stngs_back({})".format(chat_id),
 
