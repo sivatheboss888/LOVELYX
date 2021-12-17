@@ -2,7 +2,9 @@ import threading
 import time
 from typing import Union
 
-from sqlalchemy import Column, String, Boolean, UnicodeText, Integer
+from sqlalchemy import Column, String, Boolean, UnicodeText
+
+from sqlalchemy import BigInteger as Integer
 
 from MashaRoBot.modules.sql import SESSION, BASE
 
