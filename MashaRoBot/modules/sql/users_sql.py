@@ -5,7 +5,7 @@ from MashaRoBot.modules.sql import BASE, SESSION
 from sqlalchemy import (
     Column,
     ForeignKey,
-    Integer,
+    Integer as BigInteger,
     String,
     UnicodeText,
     UniqueConstraint,
