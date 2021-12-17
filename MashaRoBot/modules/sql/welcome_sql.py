@@ -4,7 +4,7 @@ from typing import Union
 
 from MashaRoBot.modules.helper_funcs.msg_types import Types
 from MashaRoBot.modules.sql import BASE, SESSION
-from sqlalchemy import BigInteger, Boolean, Column, Integer, String, UnicodeText
+from sqlalchemy import BigInteger, Boolean, Column, String, UnicodeText
 
 DEFAULT_WELCOME = "Hey {first}, how are you?"
 DEFAULT_GOODBYE = "Nice knowing ya!"
@@ -235,7 +235,7 @@ class Welcome(BASE):
     custom_welcome = Column(
         UnicodeText, default=random.choice(DEFAULT_WELCOME_MESSAGES)
     )
-    welcome_type = Column(Integer, default=Types.TEXT.value)
+    welcome_type = Column(BigInteger, default=Types.TEXT.value)
 
     custom_leave = Column(UnicodeText, default=random.choice(DEFAULT_GOODBYE_MESSAGES))
     leave_type = Column(Integer, default=Types.TEXT.value)
@@ -295,7 +295,7 @@ class WelcomeMute(BASE):
 
 class WelcomeMuteUsers(BASE):
     __tablename__ = "human_checks"
-    user_id = Column(Integer, primary_key=True)
+    user_id = Column(BigInteger, primary_key=True)
     chat_id = Column(String(14), primary_key=True)
     human_check = Column(Boolean)
 
