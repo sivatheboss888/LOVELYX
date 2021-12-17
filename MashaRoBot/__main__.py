@@ -641,6 +641,29 @@ If you have any question about Lovely, let us know at @LOVELYAPPEAL.""",
             reply_markup=InlineKeyboardMarkup(
 
                 [
+                 [
+
+                   InlineKeyboardButton(
+
+                        text="ʟᴏᴠᴇʟʏ ʟᴏɢs", url="t.me/LOV3LYLOGS"),
+
+                   InlineKeyboardButton(
+
+                        text="ᴅᴇᴠʟᴏᴘᴇʀs", url="https://t.me/LOVELY_DEVS"),
+
+                 ],
+
+                 [
+
+                   InlineKeyboardButton(
+
+                        text="sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url="t.me/LOVELYAPPEAL"),
+
+                   InlineKeyboardButton(
+
+                        text="ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url="https://t.me/LOVELY_ROBOTS"),
+
+                 ],
 
                  [
 
