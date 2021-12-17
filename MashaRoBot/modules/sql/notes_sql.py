@@ -3,8 +3,8 @@ import threading
 
 from MashaRoBot.modules.helper_funcs.msg_types import Types
 from MashaRoBot.modules.sql import BASE, SESSION
-from sqlalchemy import Boolean, Column, Integer, String, UnicodeText, distinct, func
-
+from sqlalchemy import Boolean, Column, String, UnicodeText, distinct, func
+from sqlalchemy import BigInteger as Integer
 
 class Notes(BASE):
     __tablename__ = "notes"
