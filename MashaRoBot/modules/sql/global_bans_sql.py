@@ -1,8 +1,8 @@
 import threading
 
 from MashaRoBot.modules.sql import BASE, SESSION
-from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
-
+from sqlalchemy import Boolean, Column, String, UnicodeText
+from sqlalchemy import BigInteger as Integer
 
 class GloballyBannedUsers(BASE):
     __tablename__ = "gbans"
