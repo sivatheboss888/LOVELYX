@@ -5,13 +5,12 @@ from MashaRoBot.modules.sql import BASE, SESSION
 from sqlalchemy import (
     Column,
     ForeignKey,
-    Integer as BigInteger,
     String,
     UnicodeText,
     UniqueConstraint,
     func,
 )
-
+from sqlalchemy import BigInteger as Integer
 
 class Users(BASE):
     __tablename__ = "users"
