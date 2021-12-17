@@ -358,11 +358,14 @@ def start(update: Update, context: CallbackContext):
 
         update.effective_message.reply_text(
 
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code> Join @LOVELYAPPEAL for help".format(
-
+            ""I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
                 uptime
-
             ),
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [[InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url="t.me/LOVELYAPPEAL")]]
+            ),
+        )
 
             parse_mode=ParseMode.HTML,
 
@@ -672,7 +675,7 @@ def Source_about_callback(update: Update, context: CallbackContext):
 
             text=""" Hi..🤗 I'm *lovely*
 
-                 \nHere is the [Source Code](https://t.me/LOVELYAPPEL) .""",
+                 \nHere is the [Source Code](https://t.me/LOVELYAPPEAL) .""",
 
             parse_mode=ParseMode.MARKDOWN,
 
@@ -736,7 +739,7 @@ def get_help(update: Update, context: CallbackContext):
 
                             InlineKeyboardButton(
 
-                                text="Help",
+                                text="ʜᴇʟᴘ",
 
                                 url="t.me/{}?start=ghelp_{}".format(
 
