@@ -1,6 +1,7 @@
 import threading
 
-from sqlalchemy import Column, String, UnicodeText, Boolean, Integer, distinct, func
+from sqlalchemy import Column, String, UnicodeText, Boolean, distinct, func
+from sqlalchemy import BigInteger as Integer
 
 from MashaRoBot.modules.helper_funcs.msg_types import Types
 from MashaRoBot.modules.sql import BASE, SESSION
