@@ -627,6 +627,12 @@ If you have any question about Lovely, let us know at @LOVELYAPPEAL.""",
                         text="ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url="https://t.me/LOVELY_ROBOTS"),
 
                  ],
+                 
+                 [
+                  
+                    InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back")
+                 
+                 ],
 
                  [
 
