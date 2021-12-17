@@ -1,8 +1,8 @@
 import threading
 
 from MashaRoBot.modules.sql import BASE, SESSION
-from sqlalchemy import Column, Integer, String, UnicodeText, distinct, func
-
+from sqlalchemy import Column, String, UnicodeText, distinct, func
+from sqlalchemy import BigInteger as Integer
 
 class StickersFilters(BASE):
     __tablename__ = "blacklist_stickers"
