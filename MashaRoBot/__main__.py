@@ -616,23 +616,23 @@ def Masha_about_callback(update: Update, context: CallbackContext):
 
             text=""" ℹ️ I'm *LOVELY*, a powerful group management bot built to help you manage your group easily.
 
-                 ❍ I can restrict users.
+❍ I can restrict users.
 
-                 ❍ I can greet users with customizable welcome messages and even set a group's rules.
+❍ I can greet users with customizable welcome messages and even set a group's rules.
 
-                 ❍ I have an advanced anti-flood system.
+❍ I have an advanced anti-flood system.
 
-                 ❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
+❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
 
-                 ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
+❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
 
-                 ❍ I check for admins' permissions before executing any command and more stuffs
+❍ I check for admins' permissions before executing any command and more stuffs
 
-                 \n_Emcee's licensed under the GNU General Public License v3.0_
+\n_Lovely's licensed under the GNU General Public License v3.0_
 
-                 Here is the [💾Repository](https://t.me/LOVELYAPPEAL).
+Here is the [💾Repository](https://t.me/LOVELYAPPEAL).
 
-                 If you have any question about Lovely, let us know at @LOVELYAPPEAL.""",
+If you have any question about Lovely, let us know at @LOVELYAPPEAL.""",
 
             parse_mode=ParseMode.MARKDOWN,
 
