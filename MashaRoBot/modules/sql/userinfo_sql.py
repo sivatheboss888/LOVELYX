@@ -1,7 +1,8 @@
 import threading
 
 from MashaRoBot.modules.sql import BASE, SESSION
-from sqlalchemy import Column, Integer, UnicodeText
+from sqlalchemy import Column, UnicodeText
+from sqlalchemy import BigInteger as Integer
 
 
 class UserInfo(BASE):
