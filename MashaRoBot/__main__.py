@@ -1080,7 +1080,7 @@ def get_settings(update: Update, context: CallbackContext):
 
                             InlineKeyboardButton(
 
-                                text="Settings",
+                                text="sᴇᴛᴛɪɴɢs",
 
                                 url="t.me/{}?start=stngs_{}".format(
 
