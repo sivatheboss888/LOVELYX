@@ -12,6 +12,22 @@ from telethon.errors import *
 from telethon.tl import *
 from telethon import *
 
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
+from telegram.ext import (
+
+    CallbackContext,
+
+    CallbackQueryHandler,
+
+    CommandHandler,
+
+    Filters,
+
+    MessageHandler,
+
+)
+
+
 from MashaRoBot import DRAGONS, dispatcher, telethn as bot
 from MashaRoBot.modules.disable import DisableAbleCommandHandler
 from MashaRoBot.modules.helper_funcs.chat_status import (
