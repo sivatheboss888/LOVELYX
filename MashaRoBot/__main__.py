@@ -710,11 +710,57 @@ def Owner_about_callback(update: Update, context: CallbackContext):
         )
 
 
-def Tusharabout_about_callback(update: Update, context: CallbackContext):
+
+
+
+def Tushar_about_callback(update: Update, context: CallbackContext):
 
     query = update.callback_query
 
-    if query.data == "tusharabout_":
+    if query.data == "tushar_":
+
+        query.message.edit_text(
+
+            text=""" Hello I'm Tushar, trying to do some new thanks to my friends who always support me❣️
+                  """,
+
+            parse_mode=ParseMode.MARKDOWN,
+
+            disable_web_page_preview=False,
+
+            reply_markup=InlineKeyboardMarkup(
+
+                [
+
+                 [
+
+                   InlineKeyboardButton(
+
+                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", callback_data="tusharx_"),
+
+                   InlineKeyboardButton( 
+
+                        text="ɢʀᴇᴀᴛ ᴏᴡɴᴇʀ", url="t.me/TUSHAR204"),
+
+                 ],
+
+                 [
+
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="masha_")
+
+                 ]
+
+                ]
+
+            ),
+
+        )
+
+def Tusharx_about_callback(update: Update, context: CallbackContext):
+
+    query = update.callback_query
+
+    if query.data == "tusharx_":
 
         query.message.edit_text(
 
@@ -741,50 +787,6 @@ def Tusharabout_about_callback(update: Update, context: CallbackContext):
 ⚔ ᴍʏ ɴᴇᴛᴡᴏʀᴋ - @LOVELY_NETWORK
 
 ➖➖➖➖➖➖➖➖➖➖➖➖
-                 \n FOR MORE GO BACK AND CLICK ON ABOUT OWNER! """,
-
-            parse_mode=ParseMode.MARKDOWN,
-
-            disable_web_page_preview=False,
-
-            reply_markup=InlineKeyboardMarkup(
-
-                [
-
-                 [
-
-                   InlineKeyboardButton(
-
-                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", url="t.me/ABOUTVEDMAT"),
-
-                   InlineKeyboardButton(
-
-                        text="ɢʀᴇᴀᴛ ᴏᴡɴᴇʀ", callback_data="tushar_"),
-
-                 ],
-
-                 [
-
-                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="masha_")
-
-                 ]
-
-                ]
-
-            ),
-
-        )
-
-
-def Tushar_about_callback(update: Update, context: CallbackContext):
-
-    query = update.callback_query
-
-    if query.data == "tushar_":
-
-        query.message.edit_text(
-
-            text=""" Hello I'm Tushar, trying to do some new thanks to my friends who always support me❣️
                   """,
 
             parse_mode=ParseMode.MARKDOWN,
@@ -799,11 +801,11 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
                    InlineKeyboardButton(
 
-                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", callback_data="tusharabout_"),
+                        text="ɢʀᴇᴀᴛ ᴏᴡɴᴇʀ", callback_data="tushar_"),
 
                    InlineKeyboardButton( 
 
-                        text="ɢʀᴇᴀᴛ ᴏᴡɴᴇʀ", url="t.me/TUSHAR204"),
+                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", url="t.me/ABOUTVEDMAT"),
 
                  ],
 
@@ -1339,7 +1341,7 @@ def main():
 
     tushar_callback_handler = CallbackQueryHandler(Tushar_about_callback, pattern=r"tushar_", run_async=True)
 
-    tusharabout_callback_handler = CallbackQueryHandler(Tusharabout_about_callback, pattern=r"tusharabout_", run_async=True)
+    tusharx_callback_handler = CallbackQueryHandler(Tusharx_about_callback, pattern=r"tusharx_", run_async=True)
 
     donate_handler = CommandHandler("donate", donate, run_async=True)
 
@@ -1355,7 +1357,7 @@ def main():
 
     dispatcher.add_handler(tushar_callback_handler)
 
-    dispatcher.add_handler(tusharabout_callback_handler)
+    dispatcher.add_handler(tusharx_callback_handler)
 
     dispatcher.add_handler(owner_callback_handler)
 
