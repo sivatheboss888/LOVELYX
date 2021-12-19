@@ -693,7 +693,7 @@ def Owner_about_callback(update: Update, context: CallbackContext):
 
                    InlineKeyboardButton(
 
-                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", callback_data="love_"),
+                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", callback_data="tushar_about"),
 
                  ],
 
@@ -733,7 +733,7 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
                    InlineKeyboardButton(
 
-                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", callback_data="love_"),
+                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", callback_data="tushar_about"),
 
                    InlineKeyboardButton( 
 
@@ -753,24 +753,23 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
         )
 
-
-def Love_about_callback(update: Update, context: CallbackContext):
-
-    query = update.callback_query
-
-    if query.data == "love_":
-
+elif query.data == "tushar_about":
         query.message.edit_text(
-
-            text=""" Hello how are you ?
-                 """,
-
+            text=f"📛 ɴᴀᴍᴇ -  ᴛᴜsʜᴀʀ  🇮🇳"            
+            f"\n➖➖➖➖➖➖➖➖➖➖➖➖"
+            f"\n🪡 ᴀɢᴇ - ᴅᴏᴇs'ɴᴛ ᴍᴀᴛᴛᴇʀ"
+            f"\n➖➖➖➖➖➖➖➖➖➖➖➖"
+            f"\n👩‍❤️‍👨 sᴛᴀᴛᴜs - sɪɴɢʟᴇ"
+            f"\n➖➖➖➖➖➖➖➖➖➖➖➖"
+            f"\n🇮🇳 ғʀᴏᴍ - ɪɴᴅɪᴀ"
+            f"\n➖➖➖➖➖➖➖➖➖➖➖➖"
+            f"\n🖇 ᴜsᴇʀɴᴀᴍᴇ - @TUSHAR204",
+            f"\n➖➖➖➖➖➖➖➖➖➖➖➖"
+            f"\n⚔ ᴍʏ ɴᴇᴛᴡᴏʀᴋ - @LOVELY_NETWORK"
+            f"\n➖➖➖➖➖➖➖➖➖➖➖➖",
             parse_mode=ParseMode.MARKDOWN,
-
-            disable_web_page_preview=False,
-
+            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-
                 [
 
                  [
@@ -782,9 +781,7 @@ def Love_about_callback(update: Update, context: CallbackContext):
                  ],
 
                 ]
-
             ),
-
         )
 
 
