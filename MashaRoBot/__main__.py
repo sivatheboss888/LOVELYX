@@ -763,19 +763,18 @@ def Tusharx_about_callback(update: Update, context: CallbackContext):
 
         query.message.edit_text(
 
-            text=""" 📛 ɴᴀᴍᴇ -  ᴛᴜsʜᴀʀ  🇮🇳
-                     \n ➖➖➖➖➖➖➖➖➖➖➖➖
-                     \n 🪡 ᴀɢᴇ - ᴅᴏᴇs'ɴᴛ ᴍᴀᴛᴛᴇʀ
-                     \n ➖➖➖➖➖➖➖➖➖➖➖➖
-                     \n 👩‍❤️‍👨sᴛᴀᴛᴜs - sɪɴɢʟᴇ 
-                     \n ➖➖➖➖➖➖➖➖➖➖➖➖
-                     \n 🇮🇳 ғʀᴏᴍ - ɪɴᴅɪᴀ 
-                     \n ➖➖➖➖➖➖➖➖➖➖➖➖
-                     \n 🖇 ᴜsᴇʀɴᴀᴍᴇ - @TUSHAR204
-                     \n ➖➖➖➖➖➖➖➖➖➖➖➖
-                     \n ⚔ ᴍʏ ɴᴇᴛᴡᴏʀᴋ - @LOVELY_NETWORK
-                     \n ➖➖➖➖➖➖➖➖➖➖➖➖""",
-                 
+            text="""📛 ɴᴀᴍᴇ -  ᴛᴜsʜᴀʀ  🇮🇳
+
+🪡 ᴀɢᴇ - ᴅᴏᴇs'ɴᴛ ᴍᴀᴛᴛᴇʀ
+
+👩‍❤️‍👨 sᴛᴀᴛᴜs - sɪɴɢʟᴇ 
+
+🇮🇳 ғʀᴏᴍ - ɪɴᴅɪᴀ 
+
+🖇 ᴜsᴇʀɴᴀᴍᴇ - @TUSHAR204
+
+⚔ ᴍʏ ɴᴇᴛᴡᴏʀᴋ - @LOVELY_NETWORK""",
+
             parse_mode=ParseMode.MARKDOWN,
 
             disable_web_page_preview=False,
