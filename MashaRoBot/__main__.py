@@ -699,7 +699,7 @@ def Owner_about_callback(update: Update, context: CallbackContext):
 
                  [
 
-                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="owner_back")
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="masha_")
 
                  ]
 
@@ -709,21 +709,6 @@ def Owner_about_callback(update: Update, context: CallbackContext):
 
         )
 
-    elif query.data == "owner_back":
-
-        query.message.edit_text(
-
-                MASHA_,
-
-                reply_markup=InlineKeyboardMarkup(buttons),
-
-                parse_mode=ParseMode.MARKDOWN,
-
-                timeout=60,
-
-                disable_web_page_preview=False,
-
-        )
 
 def Tusharabout_about_callback(update: Update, context: CallbackContext):
 
@@ -756,7 +741,6 @@ def Tusharabout_about_callback(update: Update, context: CallbackContext):
 ⚔ ᴍʏ ɴᴇᴛᴡᴏʀᴋ - @LOVELY_NETWORK
 
 ➖➖➖➖➖➖➖➖➖➖➖➖
-
                  \n FOR MORE GO BACK AND CLICK ON ABOUT OWNER! """,
 
             parse_mode=ParseMode.MARKDOWN,
@@ -781,7 +765,7 @@ def Tusharabout_about_callback(update: Update, context: CallbackContext):
 
                  [
 
-                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="tusharabout_back")
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="owner_")
 
                  ]
 
@@ -791,21 +775,6 @@ def Tusharabout_about_callback(update: Update, context: CallbackContext):
 
         )
 
-    elif query.data == "tusharabout_back":
-
-        query.message.edit_text(
-
-                OWNER_,
-
-                reply_markup=InlineKeyboardMarkup(buttons),
-
-                parse_mode=ParseMode.MARKDOWN,
-
-                timeout=60,
-
-                disable_web_page_preview=False,
-
-        )
 
 def Tushar_about_callback(update: Update, context: CallbackContext):
 
@@ -815,7 +784,7 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
         query.message.edit_text(
 
-            text=""" Hello I'm Tushar trying to do some new thanks to my friends who always support me❣️
+            text=""" Hello I'm Tushar, trying to do some new thanks to my friends who always support me❣️
                   """,
 
             parse_mode=ParseMode.MARKDOWN,
@@ -840,29 +809,13 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
                  [
 
-                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="tushar_back")
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="owner")
 
                  ]
 
                 ]
 
             ),
-
-        )
-
-    elif query.data == "tushar_back":
-
-        query.message.edit_text(
-
-                OWNER_,
-
-                reply_markup=InlineKeyboardMarkup(buttons),
-
-                parse_mode=ParseMode.MARKDOWN,
-
-                timeout=60,
-
-                disable_web_page_preview=False,
 
         )
 
