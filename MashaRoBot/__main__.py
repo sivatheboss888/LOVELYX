@@ -763,7 +763,8 @@ def Tusharx_about_callback(update: Update, context: CallbackContext):
 
         query.message.edit_text(
 
-            text=""" Name - Tushar Age - Doesnt matterLife - Music From - India Username - @TUSHAR204""",
+            text=""" Hello how are you ?
+                 """,
 
             parse_mode=ParseMode.MARKDOWN,
 
