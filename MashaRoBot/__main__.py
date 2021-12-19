@@ -175,11 +175,8 @@ buttons = [
 HELP_STRINGS = """
 
 ༆*LOVELY comes with many special features in it*༆
-
 ꧁*CHECK ALL BUTTON BELOW TO EXPLORE EVERY COMMANDS OF LOVELY*꧂
-
 𖣘 *All commands can either be used with* `/` *or* `!`.
-
 𖣘 *If you facing any issue or find any bugs in any command then you can report it in @LOVELYAPPEAL* .
 
 """
@@ -588,7 +585,6 @@ def Masha_about_callback(update: Update, context: CallbackContext):
         query.message.edit_text(
 
             text=""" ℹ️ I'm *LOVELY*, a powerful group management bot built to help you manage your group easily.
-
 ❍ I can restrict users.
 ❍ I can greet users with customizable welcome messages and even set a group's rules.
 ❍ I have an advanced anti-flood system.
@@ -628,6 +624,12 @@ If you have any question about Lovely, let us know at @LOVELYAPPEAL.""",
                         text="ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url="https://t.me/LOVELY_ROBOTS"),
 
                  ],
+
+                 [
+                  
+                    InlineKeyboardButton(text="ᴄʀᴇᴅɪᴛs", callback_data="owner_")
+                 
+                 ],
                  
                  [
                   
@@ -663,17 +665,17 @@ If you have any question about Lovely, let us know at @LOVELYAPPEAL.""",
 
         )
 
-def Source_about_callback(update: Update, context: CallbackContext):
+def Owner_about_callback(update: Update, context: CallbackContext):
 
     query = update.callback_query
 
-    if query.data == "source_":
+    if query.data == "owner_":
 
         query.message.edit_text(
 
-            text=""" Hi..🤗 I'm *lovely*
+            text=""" Hello I'm created by great botmaster Tushar.
 
-                 \nHere is the [Source Code](https://t.me/LOVELYAPPEAL) .""",
+                 \n explore below buttons to know about him""",
 
             parse_mode=ParseMode.MARKDOWN,
 
@@ -682,6 +684,18 @@ def Source_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
 
                 [
+
+                 [
+
+                   InlineKeyboardButton(
+
+                        text="ᴅᴇᴠʟᴏᴘᴇʀ", callback_data="tushar_"),
+
+                   InlineKeyboardButton(
+
+                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", callback_data="tusharabout_"),
+
+                 ],
 
                  [
 
@@ -695,11 +709,153 @@ def Source_about_callback(update: Update, context: CallbackContext):
 
         )
 
-    elif query.data == "source_back":
+    elif query.data == "owner_back":
 
         query.message.edit_text(
 
-                PM_START_TEXT,
+                masha_,
+
+                reply_markup=InlineKeyboardMarkup(buttons),
+
+                parse_mode=ParseMode.MARKDOWN,
+
+                timeout=60,
+
+                disable_web_page_preview=False,
+
+        )
+
+def Tusharabout_about_callback(update: Update, context: CallbackContext):
+
+    query = update.callback_query
+
+    if query.data == "tusharabout_":
+
+        query.message.edit_text(
+
+            text=""" 📛 ɴᴀᴍᴇ -  ᴛᴜsʜᴀʀ  🇮🇳
+
+➖➖➖➖➖➖➖➖➖➖➖➖
+
+🪡 ᴀɢᴇ - ᴅᴏᴇs'ɴᴛ ᴍᴀᴛᴛᴇʀ
+
+➖➖➖➖➖➖➖➖➖➖➖➖
+
+👩‍❤️‍👨sᴛᴀᴛᴜs - sɪɴɢʟᴇ 
+
+➖➖➖➖➖➖➖➖➖➖➖➖
+
+🇮🇳 ғʀᴏᴍ - ɪɴᴅɪᴀ 
+
+➖➖➖➖➖➖➖➖➖➖➖➖
+
+🖇 ᴜsᴇʀɴᴀᴍᴇ - @TUSHAR204
+
+➖➖➖➖➖➖➖➖➖➖➖➖
+
+⚔ ᴍʏ ɴᴇᴛᴡᴏʀᴋ - @LOVELY_NETWORK
+
+➖➖➖➖➖➖➖➖➖➖➖➖
+
+                 \n FOR MORE GO BACK AND CLICK ON ABOUT OWNER! """,
+
+            parse_mode=ParseMode.MARKDOWN,
+
+            disable_web_page_preview=False,
+
+            reply_markup=InlineKeyboardMarkup(
+
+                [
+
+                 [
+
+                   InlineKeyboardButton(
+
+                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", url="t.me/ABOUTVEDMAT"),
+
+                   InlineKeyboardButton(
+
+                        text="ɢʀᴇᴀᴛ ᴏᴡɴᴇʀ", callback_data="tushar_"),
+
+                 ],
+
+                 [
+
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="source_")
+
+                 ]
+
+                ]
+
+            ),
+
+        )
+
+    elif query.data == "tusharabout_back":
+
+        query.message.edit_text(
+
+                owner_,
+
+                reply_markup=InlineKeyboardMarkup(buttons),
+
+                parse_mode=ParseMode.MARKDOWN,
+
+                timeout=60,
+
+                disable_web_page_preview=False,
+
+        )
+
+def Tushar_about_callback(update: Update, context: CallbackContext):
+
+    query = update.callback_query
+
+    if query.data == "tushar_":
+
+        query.message.edit_text(
+
+            text=""" Hello I'm Tushar trying to do some new thanks to my friends who always support me❣️
+
+                 \n TO KNOW ABOUT ME GO BACK AND CLICK ON ABOUT OWNER! """,
+
+            parse_mode=ParseMode.MARKDOWN,
+
+            disable_web_page_preview=False,
+
+            reply_markup=InlineKeyboardMarkup(
+
+                [
+
+                 [
+
+                   InlineKeyboardButton(
+
+                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", callback_data="tusharabout_"),
+
+                   InlineKeyboardButton( 
+
+                        text="ɢʀᴇᴀᴛ ᴏᴡɴᴇʀ", url="t.me/TUSHAR204"),
+
+                 ],
+
+                 [
+
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="tushar_")
+
+                 ]
+
+                ]
+
+            ),
+
+        )
+
+    elif query.data == "tushar_back":
+
+        query.message.edit_text(
+
+                owner_,
 
                 reply_markup=InlineKeyboardMarkup(buttons),
 
@@ -717,7 +873,6 @@ def get_help(update: Update, context: CallbackContext):
 
     args = update.effective_message.text.split(None, 1)
 
-    # ONLY send help in PM
 
     if chat.type != chat.PRIVATE:
 
