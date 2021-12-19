@@ -605,23 +605,11 @@ If you have any question about Lovely, let us know at @LOVELYAPPEAL.""",
 
                    InlineKeyboardButton(
 
-                        text="ʟᴏᴠᴇʟʏ ʟᴏɢs", url="t.me/LOV3LYLOGS"),
+                        text="sᴜᴘᴘᴏʀᴛ", callback_data="supports_"),
 
                    InlineKeyboardButton(
 
-                        text="ᴅᴇᴠʟᴏᴘᴇʀs", url="https://t.me/LOVELY_DEVS"),
-
-                 ],
-
-                 [
-
-                   InlineKeyboardButton(
-
-                        text="sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url="t.me/LOVELYAPPEAL"),
-
-                   InlineKeyboardButton(
-
-                        text="ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url="https://t.me/LOVELY_ROBOTS"),
+                        text="ᴏᴡɴᴇʀ", callback_data="owner_"),
 
                  ],
 
@@ -787,6 +775,58 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
                    InlineKeyboardButton( 
 
                         text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", url="t.me/ABOUTVEDMAT"),
+
+                 ],
+
+                 [
+
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="masha_")
+
+                 ]
+
+                ]
+
+            ),
+
+        )
+
+
+    elif query.data == "supports_":
+
+        query.message.edit_text(
+
+            text=""" Join my Support Group/Update Channel to see new updates or report your problems.
+                 """,
+
+            parse_mode=ParseMode.MARKDOWN,
+
+            disable_web_page_preview=True,
+
+            reply_markup=InlineKeyboardMarkup(
+
+                [
+
+                 [
+
+                   InlineKeyboardButton(
+
+                        text="sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url="t.me/LOVELYAPPEAL"),
+
+                   InlineKeyboardButton( 
+
+                        text="ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url="t.me/LOVELY_ROBOTS"),
+
+                 ],
+
+                 [
+
+                   InlineKeyboardButton(
+
+                        text="ɢʟᴏʙᴀʟ ʟᴏɢᴅ", url="https://t.me/LOV3LYLOGS"),
+
+                   InlineKeyboardButton(
+
+                        text="ʟᴏᴠᴇʟʏ ᴅᴇᴠs", url="https://t.me/LOVELY_DEVS"),
 
                  ],
 
