@@ -760,7 +760,8 @@ def Love_about_callback(update: Update, context: CallbackContext):
     if query.data == "love_":
 
         query.message.edit_text(
-            text=f"📛 ɴᴀᴍᴇ -  ᴛᴜsʜᴀʀ  🇮🇳"            
+
+            text=""" f"📛 ɴᴀᴍᴇ -  ᴛᴜsʜᴀʀ  🇮🇳"            
             f"\n➖➖➖➖➖➖➖➖➖➖➖➖"
             f"\n🪡 ᴀɢᴇ - ᴅᴏᴇs'ɴᴛ ᴍᴀᴛᴛᴇʀ"
             f"\n➖➖➖➖➖➖➖➖➖➖➖➖"
@@ -771,13 +772,14 @@ def Love_about_callback(update: Update, context: CallbackContext):
             f"\n🖇 ᴜsᴇʀɴᴀᴍᴇ - @TUSHAR204",
             f"\n➖➖➖➖➖➖➖➖➖➖➖➖"
             f"\n⚔ ᴍʏ ɴᴇᴛᴡᴏʀᴋ - @LOVELY_NETWORK"
-            f"\n➖➖➖➖➖➖➖➖➖➖➖➖",
+            f"\n➖➖➖➖➖➖➖➖➖➖➖➖" """,
 
             parse_mode=ParseMode.MARKDOWN,
 
             disable_web_page_preview=False,
 
             reply_markup=InlineKeyboardMarkup(
+
                 [
 
                  [
