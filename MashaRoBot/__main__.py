@@ -723,7 +723,7 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
             parse_mode=ParseMode.MARKDOWN,
 
-            disable_web_page_preview=False,
+            disable_web_page_preview=True,
 
             reply_markup=InlineKeyboardMarkup(
 
@@ -753,11 +753,7 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
         )
 
-def Love_about_callback(update: Update, context: CallbackContext):
-
-    query = update.callback_query
-
-    if query.data == "love_":
+    elif query.data == "love":
 
         query.message.edit_text(
 
@@ -776,7 +772,7 @@ def Love_about_callback(update: Update, context: CallbackContext):
 
             parse_mode=ParseMode.MARKDOWN,
 
-            disable_web_page_preview=False,
+            disable_web_page_preview=True,
 
             reply_markup=InlineKeyboardMarkup(
 
