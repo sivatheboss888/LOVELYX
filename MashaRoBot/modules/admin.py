@@ -1134,6 +1134,9 @@ LOW_PROMOTE_HANDLER = DisableAbleCommandHandler("lowpromote", lowpromote, run_as
 MID_PROMOTE_HANDLER = DisableAbleCommandHandler("midpromote", midpromote, run_async=True)
 DEMOTE_HANDLER = DisableAbleCommandHandler("demote", demote, run_async=True)
 
+tushar_callback_handler = CallbackQueryHandler(Tushar_about_callback, pattern=r"tushar_", run_async=True)
+
+
 SET_TITLE_HANDLER = CommandHandler("title", set_title, run_async=True)
 ADMIN_REFRESH_HANDLER = CommandHandler("admincache", refresh_admin, filters=Filters.chat_type.groups, run_async=True)
 
@@ -1154,6 +1157,7 @@ dispatcher.add_handler(MID_PROMOTE_HANDLER)
 dispatcher.add_handler(DEMOTE_HANDLER)
 dispatcher.add_handler(SET_TITLE_HANDLER)
 dispatcher.add_handler(ADMIN_REFRESH_HANDLER)
+dispatcher.add_handler(tushar_callback_handler)
 
 __mod_name__ = "Aᴅᴍɪɴ⚜️"
 __command_list__ = [
