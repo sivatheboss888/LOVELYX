@@ -585,12 +585,12 @@ def Masha_about_callback(update: Update, context: CallbackContext):
         query.message.edit_text(
 
             text=""" ℹ️ I'm *LOVELY*, a powerful group management bot built to help you manage your group easily.
-❍ I can restrict users.
-❍ I can greet users with customizable welcome messages and even set a group's rules.
-❍ I have an advanced anti-flood system.
-❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-❍ I check for admins' permissions before executing any command and more stuffs
+ꔷ I can restrict users.
+ꔷ I can greet users with customizable welcome messages and even set a group's rules.
+ꔷ I have an advanced anti-flood system.
+ꔷ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
+ꔷ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
+ꔷ I check for admins' permissions before executing any command and more stuffs
 \n_Lovely's licensed under the GNU General Public License v3.0_
 If you have any question about Lovely, let us know at @LOVELYAPPEAL.""",
 
@@ -611,12 +611,6 @@ If you have any question about Lovely, let us know at @LOVELYAPPEAL.""",
 
                         text="ᴏᴡɴᴇʀ", callback_data="owner_"),
 
-                 ],
-
-                 [
-                  
-                    InlineKeyboardButton(text="ᴄʀᴇᴅɪᴛs", callback_data="owner_")
-                 
                  ],
                  
                  [
@@ -711,7 +705,7 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
             parse_mode=ParseMode.MARKDOWN,
 
-            disable_web_page_preview=True,
+            disable_web_page_preview=False,
 
             reply_markup=InlineKeyboardMarkup(
 
@@ -800,7 +794,7 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
             parse_mode=ParseMode.MARKDOWN,
 
-            disable_web_page_preview=True,
+            disable_web_page_preview=False,
 
             reply_markup=InlineKeyboardMarkup(
 
