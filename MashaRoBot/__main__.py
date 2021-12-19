@@ -753,7 +753,7 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
         )
 
-elif query.data == "tushar_about":
+    elif query.data == "tushar_about":
         query.message.edit_text(
             text=f"📛 ɴᴀᴍᴇ -  ᴛᴜsʜᴀʀ  🇮🇳"            
             f"\n➖➖➖➖➖➖➖➖➖➖➖➖"
