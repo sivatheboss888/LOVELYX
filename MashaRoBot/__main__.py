@@ -1324,8 +1324,6 @@ def main():
 
     dispatcher.add_handler(tushar_callback_handler)
 
-    dispatcher.add_handler(love_callback_handler)
-
     dispatcher.add_handler(owner_callback_handler)
 
     dispatcher.add_handler(settings_handler)
