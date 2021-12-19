@@ -782,7 +782,6 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
                 ]
             ),
-        )
 
 
 def get_help(update: Update, context: CallbackContext):
