@@ -775,22 +775,12 @@ def Tusharx_about_callback(update: Update, context: CallbackContext):
                 [
 
                  [
-
-                   InlineKeyboardButton(
-
-                        text="ɢʀᴇᴀᴛ ᴏᴡɴᴇʀ", callback_data="tushar_"),
-
-                   InlineKeyboardButton( 
-
-                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", url="t.me/ABOUTVEDMAT"),
-
+                   InlineKeyboardButton(text="ɢʀᴇᴀᴛ ᴏᴡɴᴇʀ", callback_data="tushar_"),
+                   InlineKeyboardButton(text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", url="t.me/ABOUTVEDMAT"),
                  ],
-
                  [
-
-                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="masha_")
-
-                 ]
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="masha_"),
+                 ],
 
                 ]
 
