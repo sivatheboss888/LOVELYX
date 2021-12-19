@@ -759,7 +759,7 @@ def Love_about_callback(update: Update, context: CallbackContext):
 
     query = update.callback_query
 
-    if query.data == "love":
+    if query.data == "love_":
 
         query.message.edit_text(
 
