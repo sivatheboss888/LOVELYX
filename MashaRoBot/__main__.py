@@ -1323,7 +1323,7 @@ def main():
 
     tushar_callback_handler = CallbackQueryHandler(Tushar_about_callback, pattern=r"tushar_", run_async=True)
 
-    tusharx_callback_handler = CallbackQueryHandler(Love_about_callback, pattern=r"love_", run_async=True)
+    love_callback_handler = CallbackQueryHandler(Love_about_callback, pattern=r"love_", run_async=True)
 
     donate_handler = CommandHandler("donate", donate, run_async=True)
 
@@ -1338,6 +1338,8 @@ def main():
     dispatcher.add_handler(about_callback_handler)
 
     dispatcher.add_handler(tushar_callback_handler)
+
+    dispatcher.add_handler(love_callback_handler)
 
     dispatcher.add_handler(owner_callback_handler)
 
