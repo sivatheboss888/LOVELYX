@@ -673,19 +673,8 @@ def Owner_about_callback(update: Update, context: CallbackContext):
 
         query.message.edit_text(
 
-            text="""  📛 ɴᴀᴍᴇ -  ᴛᴜsʜᴀʀ  🇮🇳
-                     \n ➖➖➖➖➖➖➖➖➖➖➖➖
-                     \n 🪡 ᴀɢᴇ - ᴅᴏᴇs'ɴᴛ ᴍᴀᴛᴛᴇʀ
-                     \n ➖➖➖➖➖➖➖➖➖➖➖➖
-                     \n 👩‍❤️‍👨sᴛᴀᴛᴜs - sɪɴɢʟᴇ 
-                     \n ➖➖➖➖➖➖➖➖➖➖➖➖
-                     \n 🇮🇳 ғʀᴏᴍ - ɪɴᴅɪᴀ 
-                     \n ➖➖➖➖➖➖➖➖➖➖➖➖
-                     \n 🖇 ᴜsᴇʀɴᴀᴍᴇ - @TUSHAR204
-                     \n ➖➖➖➖➖➖➖➖➖➖➖➖
-                     \n ⚔ ᴍʏ ɴᴇᴛᴡᴏʀᴋ - @LOVELY_NETWORK
-                     \n ➖➖➖➖➖➖➖➖➖➖➖➖
-                 """,
+            text=""" Hello I've created by great botmaster Tushar.
+                     \n explore below buttons to know about him""",
 
             parse_mode=ParseMode.MARKDOWN,
 
