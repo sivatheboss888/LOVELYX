@@ -713,7 +713,7 @@ def Owner_about_callback(update: Update, context: CallbackContext):
 
         query.message.edit_text(
 
-                masha_,
+                MASHA_,
 
                 reply_markup=InlineKeyboardMarkup(buttons),
 
@@ -781,7 +781,7 @@ def Tusharabout_about_callback(update: Update, context: CallbackContext):
 
                  [
 
-                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="source_")
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="tusharabout_back")
 
                  ]
 
@@ -795,7 +795,7 @@ def Tusharabout_about_callback(update: Update, context: CallbackContext):
 
         query.message.edit_text(
 
-                owner_,
+                OWNER_,
 
                 reply_markup=InlineKeyboardMarkup(buttons),
 
@@ -816,8 +816,7 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
         query.message.edit_text(
 
             text=""" Hello I'm Tushar trying to do some new thanks to my friends who always support me❣️
-
-                 \n TO KNOW ABOUT ME GO BACK AND CLICK ON ABOUT OWNER! """,
+                  """,
 
             parse_mode=ParseMode.MARKDOWN,
 
@@ -841,7 +840,7 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
                  [
 
-                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="tushar_")
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="tushar_back")
 
                  ]
 
@@ -855,7 +854,7 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
         query.message.edit_text(
 
-                owner_,
+                OWNER_,
 
                 reply_markup=InlineKeyboardMarkup(buttons),
 
