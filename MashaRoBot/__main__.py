@@ -756,7 +756,7 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
         )
 
-def Masha_about_callback(update: Update, context: CallbackContext):
+def Tusharx_about_callback(update: Update, context: CallbackContext):
 
     query = update.callback_query
 
