@@ -763,7 +763,7 @@ def Tusharx_about_callback(update: Update, context: CallbackContext):
 
         query.message.edit_text(
 
-            text="""📛 ɴᴀᴍᴇ -  ᴛᴜsʜᴀʀ  🇮🇳
+            text=""" 📛 ɴᴀᴍᴇ -  ᴛᴜsʜᴀʀ  🇮🇳
 
 🪡 ᴀɢᴇ - ᴅᴏᴇs'ɴᴛ ᴍᴀᴛᴛᴇʀ
 
