@@ -765,7 +765,7 @@ def Tusharabout_about_callback(update: Update, context: CallbackContext):
 
                  [
 
-                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="owner_")
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="masha_")
 
                  ]
 
@@ -809,7 +809,7 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
                  [
 
-                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="owner")
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="masha_")
 
                  ]
 
