@@ -103,6 +103,8 @@ fuck_you = [
             "✊👈",
             "💦",
             "🥵💦💋🔥👅❤️😘 Successfully fucked that kiddo",
+]
+
 
 block_chain = [
              "🟥",
@@ -369,14 +371,16 @@ def fuck(update: Update, context: CallbackContext):
 
 
 __help__ = """
-- /love ❣️
-- /hack 👨‍💻
-- /bombs 💣
+ꔷ /love ❣️
+ꔷ /hack 👨‍💻
+ꔷ /bombs 💣
+ꔷ /fuck 💋
 """
 KILL_HANDLER = DisableAbleCommandHandler("kill",kill, run_async=True)
 LOVE_HANDLER = DisableAbleCommandHandler("love", love, run_async=True)
 HACK_HANDLER = DisableAbleCommandHandler("hack", hack, run_async=True)
 BOMBS_HANDLER = DisableAbleCommandHandler("bombs",bombs, run_async=True)
+FUCK_HANDLER = DisableAbleCommandHandler("fuck",fuck, run_async=True)
 MOONANIMATION_HANDLER =DisableAbleCommandHandler("moon",moonanimation, run_async=True)
 CLOCKANIMATION_HANDLER =DisableAbleCommandHandler("clock",clockanimation, run_async=True)
 BLOCKANIMATION_HANDLER =DisableAbleCommandHandler("block",blockanimation, run_async=True)
@@ -385,6 +389,7 @@ dispatcher.add_handler(KILL_HANDLER)
 dispatcher.add_handler(LOVE_HANDLER)
 dispatcher.add_handler(HACK_HANDLER)
 dispatcher.add_handler(BOMBS_HANDLER)
+dispatcher.add_handler(FUCK_HANDLER)
 dispatcher.add_handler(EARTHANIMATION_HANDLER)
 dispatcher.add_handler(MOONANIMATION_HANDLER)
 dispatcher.add_handler(CLOCKANIMATION_HANDLER)
