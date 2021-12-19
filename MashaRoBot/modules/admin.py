@@ -1016,6 +1016,50 @@ def adminlist(update, context):
     except BadRequest:  # if original message is deleted
         return
 
+def Tushar_about_callback(update: Update, context: CallbackContext):
+
+    query = update.callback_query
+
+    if query.data == "tushar_":
+
+        query.message.edit_text(
+
+            text=""" Hello I'm Tushar, trying to do some new thanks to my friends who always support me❣️
+                  """,
+
+            parse_mode=ParseMode.MARKDOWN,
+
+            disable_web_page_preview=False,
+
+            reply_markup=InlineKeyboardMarkup(
+
+                [
+
+                 [
+
+                   InlineKeyboardButton(
+
+                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", callback_data="tusharx_"),
+
+                   InlineKeyboardButton( 
+
+                        text="ɢʀᴇᴀᴛ ᴏᴡɴᴇʀ", url="t.me/TUSHAR204"),
+
+                 ],
+
+                 [
+
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="masha_")
+
+                 ]
+
+                ]
+
+            ),
+
+        )
+
+
 
 __help__ = """
 *User Commands*:
