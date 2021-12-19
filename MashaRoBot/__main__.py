@@ -665,6 +665,7 @@ If you have any question about Lovely, let us know at @LOVELYAPPEAL.""",
 
         )
 
+
 def Owner_about_callback(update: Update, context: CallbackContext):
 
     query = update.callback_query
@@ -707,9 +708,6 @@ def Owner_about_callback(update: Update, context: CallbackContext):
             ),
 
         )
-
-
-
 
 
 def Tushar_about_callback(update: Update, context: CallbackContext):
@@ -755,6 +753,7 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
         )
 
+
 def Love_about_callback(update: Update, context: CallbackContext):
 
     query = update.callback_query
@@ -787,6 +786,7 @@ def Love_about_callback(update: Update, context: CallbackContext):
             ),
 
         )
+
 
 def get_help(update: Update, context: CallbackContext):
 
