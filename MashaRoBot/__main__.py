@@ -777,7 +777,7 @@ def Love_about_callback(update: Update, context: CallbackContext):
 
             disable_web_page_preview=False,
 
-            reply_markup=InlineKeyboardMarkup
+            reply_markup=InlineKeyboardMarkup(
                 [
 
                  [
