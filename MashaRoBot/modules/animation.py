@@ -37,7 +37,7 @@ EDIT_TIMES = 10
 #sleep how many times after each edit in 'fuck' 
 EDIT_SLEEP = 1
 #edit how many times in 'fuck' 
-EDIT_TIMES = 10
+EDIT_TIMES = 11
 
 
 
