@@ -33,7 +33,6 @@ Your beloved:-
 ▪️ [Shreyansh](https://github.com/okay-retard)
 ▪️ [Ayush](https://github.com/MissJuliaRobot/MissJuliaRobot)
 ▪️ [Inuka Asith](https://github.com/inukaasith)
-▪️ [Legendx](https://github.com/LEGENDXOP)
 ▪️ [Amarnath c](https://github.com/Amarnathcdj)
 ▪️ [Thehamkercat](https://github.com/thehamkercat)
 ▪️ [DragSama](https://github.com/DragSama)
