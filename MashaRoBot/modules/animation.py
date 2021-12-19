@@ -34,6 +34,11 @@ EDIT_SLEEP = 1
 EDIT_TIMES = 10
 
 
+#sleep how many times after each edit in 'fuck' 
+EDIT_SLEEP = 1
+#edit how many times in 'fuck' 
+EDIT_TIMES = 10
+
 
 
 #sleep how many times after each edit in 'earthanimation' 
@@ -85,6 +90,19 @@ kill_you = [
             "**Target killed successfully"
 ]
 
+
+fuck_you = [
+            "💋",
+            "👁 👁",
+            "👁 👁 \n   👄",
+            "👁 👁 \n   👅",
+            "✊",
+            "✊    👈",
+            "✊   👈",       
+            "✊ 👈",
+            "✊👈",
+            "💦",
+            "🥵💦💋🔥👅❤️😘 Successfully fucked that kiddo",
 
 block_chain = [
              "🟥",
@@ -338,6 +356,17 @@ def kill(update: Update, context: CallbackContext):
         msg.edit_text(kill_you[x%12])
         time.sleep(EDIT_SLEEP)
     msg.edit_text('⚰')
+
+@user_admin
+def fuck(update: Update, context: CallbackContext):
+    bot, args = context.bot, context.args
+    msg = update.effective_message.reply_text('💋') 
+    for x in range(EDIT_TIMES):
+        msg.edit_text(fuck_you[x%12])
+        time.sleep(EDIT_SLEEP)
+    msg.edit_text('🥵💦💋🔥👅❤️😘 Successfully fucked that kiddo')
+
+
 
 __help__ = """
 - /love ❣️
