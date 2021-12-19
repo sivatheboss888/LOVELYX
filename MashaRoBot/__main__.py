@@ -693,7 +693,7 @@ def Owner_about_callback(update: Update, context: CallbackContext):
 
                    InlineKeyboardButton(
 
-                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", callback_data="love_"),
+                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", callback_data="love"),
 
                  ],
 
@@ -733,7 +733,7 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
                    InlineKeyboardButton(
 
-                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", callback_data="love_"),
+                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", callback_data="love"),
 
                    InlineKeyboardButton( 
 
@@ -743,7 +743,7 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
                  [
 
-                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="masha_")
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="owner_")
 
                  ]
 
