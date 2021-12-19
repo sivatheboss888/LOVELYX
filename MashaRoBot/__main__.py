@@ -767,18 +767,31 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
             f"\n➖➖➖➖➖➖➖➖➖➖➖➖"
             f"\n⚔ ᴍʏ ɴᴇᴛᴡᴏʀᴋ - @LOVELY_NETWORK"
             f"\n➖➖➖➖➖➖➖➖➖➖➖➖",
+
             parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
+
+            disable_web_page_preview=False,
+
+            reply_markup=InlineKeyboardMarkup
                 [
 
                  [
-                   InlineKeyboardButton(text="ɢʀᴇᴀᴛ ᴏᴡɴᴇʀ", callback_data="tushar_"),
-                   InlineKeyboardButton(text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", url="t.me/ABOUTVEDMAT"),
+
+                   InlineKeyboardButton(
+
+                        text="ɢʀᴇᴀᴛ ᴏᴡɴᴇʀ", callback_data="tushar_"),
+
+                   InlineKeyboardButton( 
+
+                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", url="t.me/ABOUTVEDMAT"),
+
                  ],
+
                  [
-                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="masha_"),
-                 ],
+
+                    InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="masha_")
+
+                 ]
 
                 ]
 
