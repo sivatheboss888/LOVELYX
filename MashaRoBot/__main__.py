@@ -1383,7 +1383,11 @@ def main():
 
     about_callback_handler = CallbackQueryHandler(Masha_about_callback, pattern=r"masha_", run_async=True)
 
-    source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_", run_async=True)
+    owner_callback_handler = CallbackQueryHandler(Owner_about_callback, pattern=r"owner_", run_async=True)
+
+    tushar_callback_handler = CallbackQueryHandler(Tushar_about_callback, pattern=r"tushar_", run_async=True)
+
+    tusharabout_callback_handler = CallbackQueryHandler(Tusharabout_about_callback, pattern=r"tusharabout_", run_async=True)
 
     donate_handler = CommandHandler("donate", donate, run_async=True)
 
@@ -1397,7 +1401,11 @@ def main():
 
     dispatcher.add_handler(about_callback_handler)
 
-    dispatcher.add_handler(source_callback_handler)
+    dispatcher.add_handler(tushar_callback_handler)
+
+    dispatcher.add_handler(tusharabout_callback_handler)
+
+    dispatcher.add_handler(owner_callback_handler)
 
     dispatcher.add_handler(settings_handler)
 
