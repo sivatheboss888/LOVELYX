@@ -693,7 +693,7 @@ def Owner_about_callback(update: Update, context: CallbackContext):
 
                    InlineKeyboardButton(
 
-                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", callback_data="tushar_about"),
+                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", callback_data="love_"),
 
                  ],
 
@@ -733,7 +733,7 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
                    InlineKeyboardButton(
 
-                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", callback_data="tushar_about"),
+                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", callback_data="love_"),
 
                    InlineKeyboardButton( 
 
@@ -753,11 +753,11 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
         )
 
-def Tushar_about_callback(update: Update, context: CallbackContext):
+def Love_about_callback(update: Update, context: CallbackContext):
 
     query = update.callback_query
 
-    if query.data == "tushar_":
+    if query.data == "love_":
 
         query.message.edit_text(
             text=f"📛 ɴᴀᴍᴇ -  ᴛᴜsʜᴀʀ  🇮🇳"            
