@@ -256,7 +256,7 @@ def send_help(chat_id, text, keyboard=None):
 
     if not keyboard:
 
-        keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
+        keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "lovely"))
 
     dispatcher.bot.send_message(
 
@@ -292,7 +292,7 @@ def start(update: Update, context: CallbackContext):
 
         if len(args) >= 1:
 
-            if args[0].lower() == "help":
+            if args[0].lower() == "lovely":
 
                 send_lovely(update.effective_chat.id, HELP_STRINGS)
 
@@ -525,7 +525,7 @@ def help_button(update, context):
 
                 reply_markup=InlineKeyboardMarkup(
 
-                    paginate_modules(curr_page - 1, HELPABLE, "lovely")
+                    paginate_modules(curr_page - 1, HELPABLE, "help")
 
                 ),
 
@@ -543,7 +543,7 @@ def help_button(update, context):
 
                 reply_markup=InlineKeyboardMarkup(
 
-                    paginate_modules(next_page + 1, HELPABLE, "lovely")
+                    paginate_modules(next_page + 1, HELPABLE, "help")
 
                 ),
 
@@ -559,7 +559,7 @@ def help_button(update, context):
 
                 reply_markup=InlineKeyboardMarkup(
 
-                    paginate_modules(0, HELPABLE, "lovely")
+                    paginate_modules(0, HELPABLE, "help")
 
                 ),
 
@@ -863,7 +863,7 @@ def get_lovely(update: Update, context: CallbackContext):
 
                                 text="ʜᴇʟᴘ",
 
-                                url="t.me/{}?start=lovely_{}".format(
+                                url="t.me/{}?start=help_{}".format(
 
                                     context.bot.username, module
 
@@ -895,7 +895,7 @@ def get_lovely(update: Update, context: CallbackContext):
 
                             text="ᴏᴘᴇɴ ɪɴ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ",
 
-                            url="t.me/{}?start=lovely".format(context.bot.username),
+                            url="t.me/{}?start=help".format(context.bot.username),
 
                         )
 
