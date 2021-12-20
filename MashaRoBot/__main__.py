@@ -312,7 +312,7 @@ def start(update: Update, context: CallbackContext):
 
                     InlineKeyboardMarkup(
 
-                        [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="lovely_back")]]
+                        [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_back")]]
 
                     ),
 
@@ -469,13 +469,13 @@ def help_button(update, context):
 
     query = update.callback_query
 
-    mod_match = re.match(r"lovely_module\((.+?)\)", query.data)
+    mod_match = re.match(r"help_module\((.+?)\)", query.data)
 
-    prev_match = re.match(r"lovely_prev\((.+?)\)", query.data)
+    prev_match = re.match(r"help_prev\((.+?)\)", query.data)
 
     next_match = re.match(r"lovely_next\((.+?)\)", query.data)
 
-    back_match = re.match(r"lovely_back", query.data)
+    back_match = re.match(r"help_back", query.data)
 
     print(query.message.chat.id)
 
@@ -507,7 +507,7 @@ def help_button(update, context):
 
                 reply_markup=InlineKeyboardMarkup(
 
-                    [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="lovely_back")]]
+                    [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_back")]]
 
                 ),
 
@@ -614,7 +614,7 @@ If you have any question about Lovely, let us know at @LOVELYAPPEAL.""",
                  
                  [
                   
-                    InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="lovely_back")
+                    InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back")
                  
                  ],
 
@@ -938,7 +938,7 @@ def get_lovely(update: Update, context: CallbackContext):
 
             InlineKeyboardMarkup(
 
-                [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="lovely_back")]]
+                [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_back")]]
 
             ),
 
@@ -1342,9 +1342,9 @@ def main():
 
     start_handler = CommandHandler("start", start, run_async=True)
 
-    lovely_handler = CommandHandler("lovely", get_lovely, run_async=True)
+    help_handler = CommandHandler("help", get_help, run_async=True)
 
-    lovely_callback_handler = CallbackQueryHandler(help_button, pattern=r"lovely_.*", run_async=True)
+    help_callback_handler = CallbackQueryHandler(help_button, pattern=r"help_.*", run_async=True)
 
     settings_handler = CommandHandler("settings", get_settings, run_async=True)
 
@@ -1364,7 +1364,7 @@ def main():
 
     dispatcher.add_handler(start_handler)
 
-    dispatcher.add_handler(lovely_handler)
+    dispatcher.add_handler(help_handler)
 
     dispatcher.add_handler(about_callback_handler)
 
