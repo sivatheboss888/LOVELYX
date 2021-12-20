@@ -1360,7 +1360,7 @@ def main():
 
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats, run_async=True)
 
-    # dispatcher.add_handler(test_handler)
+    dispatcher.add_handler(test_handler)
 
     dispatcher.add_handler(start_handler)
 
@@ -1374,7 +1374,7 @@ def main():
 
     dispatcher.add_handler(settings_handler)
 
-    dispatcher.add_handler(lovely_callback_handler)
+    dispatcher.add_handler(help_callback_handler)
 
     dispatcher.add_handler(settings_callback_handler)
 
