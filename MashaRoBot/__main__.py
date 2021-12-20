@@ -256,7 +256,7 @@ def send_help(chat_id, text, keyboard=None):
 
     if not keyboard:
 
-        keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "lovely"))
+        keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
 
     dispatcher.bot.send_message(
 
