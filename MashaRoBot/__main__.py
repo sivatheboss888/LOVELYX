@@ -1342,7 +1342,7 @@ def main():
 
     start_handler = CommandHandler("start", start, run_async=True)
 
-    lovely_handler = CommandHandler("lovely", get_help, run_async=True)
+    lovely_handler = CommandHandler("lovely", get_lovely, run_async=True)
 
     lovely_callback_handler = CallbackQueryHandler(help_button, pattern=r"lovely_.*", run_async=True)
 
