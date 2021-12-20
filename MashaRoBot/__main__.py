@@ -157,7 +157,7 @@ buttons = [
 
         InlineKeyboardButton(text="ʙᴀsɪᴄ ɢᴜɪᴅᴇ", callback_data="masha_"),
 
-        InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
+        InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="lovely_back"),
 
     ],
    
@@ -256,7 +256,7 @@ def send_help(chat_id, text, keyboard=None):
 
     if not keyboard:
 
-        keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
+        keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "lovely"))
 
     dispatcher.bot.send_message(
 
@@ -292,9 +292,9 @@ def start(update: Update, context: CallbackContext):
 
         if len(args) >= 1:
 
-            if args[0].lower() == "help":
+            if args[0].lower() == "lovely":
 
-                send_help(update.effective_chat.id, HELP_STRINGS)
+                send_lovely(update.effective_chat.id, HELP_STRINGS)
 
             elif args[0].lower().startswith("ghelp_"):
 
@@ -304,7 +304,7 @@ def start(update: Update, context: CallbackContext):
 
                     return
 
-                send_help(
+                send_lovely(
 
                     update.effective_chat.id,
 
@@ -507,7 +507,7 @@ def help_button(update, context):
 
                 reply_markup=InlineKeyboardMarkup(
 
-                    [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="lovely_back")]]
 
                 ),
 
@@ -525,7 +525,7 @@ def help_button(update, context):
 
                 reply_markup=InlineKeyboardMarkup(
 
-                    paginate_modules(curr_page - 1, HELPABLE, "help")
+                    paginate_modules(curr_page - 1, HELPABLE, "lovely")
 
                 ),
 
@@ -543,7 +543,7 @@ def help_button(update, context):
 
                 reply_markup=InlineKeyboardMarkup(
 
-                    paginate_modules(next_page + 1, HELPABLE, "help")
+                    paginate_modules(next_page + 1, HELPABLE, "lovely")
 
                 ),
 
@@ -559,7 +559,7 @@ def help_button(update, context):
 
                 reply_markup=InlineKeyboardMarkup(
 
-                    paginate_modules(0, HELPABLE, "help")
+                    paginate_modules(0, HELPABLE, "lovely")
 
                 ),
 
@@ -614,7 +614,7 @@ If you have any question about Lovely, let us know at @LOVELYAPPEAL.""",
                  
                  [
                   
-                    InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back")
+                    InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="lovely_back")
                  
                  ],
 
@@ -930,7 +930,7 @@ def get_help(update: Update, context: CallbackContext):
 
         )
 
-        send_help(
+        send_lovely(
 
             chat.id,
 
@@ -938,7 +938,7 @@ def get_help(update: Update, context: CallbackContext):
 
             InlineKeyboardMarkup(
 
-                [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="lovely_back")]]
 
             ),
 
@@ -1342,9 +1342,9 @@ def main():
 
     start_handler = CommandHandler("start", start, run_async=True)
 
-    help_handler = CommandHandler("help", get_help, run_async=True)
+    lovely_handler = CommandHandler("lovely", get_help, run_async=True)
 
-    help_callback_handler = CallbackQueryHandler(help_button, pattern=r"help_.*", run_async=True)
+    lovely_callback_handler = CallbackQueryHandler(lovely_button, pattern=r"lovely_.*", run_async=True)
 
     settings_handler = CommandHandler("settings", get_settings, run_async=True)
 
@@ -1364,7 +1364,7 @@ def main():
 
     dispatcher.add_handler(start_handler)
 
-    dispatcher.add_handler(help_handler)
+    dispatcher.add_handler(lovely_handler)
 
     dispatcher.add_handler(about_callback_handler)
 
@@ -1374,7 +1374,7 @@ def main():
 
     dispatcher.add_handler(settings_handler)
 
-    dispatcher.add_handler(help_callback_handler)
+    dispatcher.add_handler(lovely_callback_handler)
 
     dispatcher.add_handler(settings_callback_handler)
 
