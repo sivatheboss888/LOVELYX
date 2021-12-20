@@ -1344,7 +1344,7 @@ def main():
 
     lovely_handler = CommandHandler("lovely", get_help, run_async=True)
 
-    lovely_callback_handler = CallbackQueryHandler(lovely_button, pattern=r"lovely_.*", run_async=True)
+    lovely_callback_handler = CallbackQueryHandler(help_button, pattern=r"lovely_.*", run_async=True)
 
     settings_handler = CommandHandler("settings", get_settings, run_async=True)
 
