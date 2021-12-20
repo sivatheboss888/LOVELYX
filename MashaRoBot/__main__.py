@@ -863,7 +863,7 @@ def get_help(update: Update, context: CallbackContext):
 
                                 text="ʜᴇʟᴘ",
 
-                                url="t.me/{}?start=ghelp_{}".format(
+                                url="t.me/{}?start=lovely_{}".format(
 
                                     context.bot.username, module
 
@@ -895,7 +895,7 @@ def get_help(update: Update, context: CallbackContext):
 
                             text="ᴏᴘᴇɴ ɪɴ ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ",
 
-                            url="t.me/{}?start=help".format(context.bot.username),
+                            url="t.me/{}?start=lovely".format(context.bot.username),
 
                         )
 
