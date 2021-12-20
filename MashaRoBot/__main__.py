@@ -465,7 +465,7 @@ def error_callback(update: Update, context: CallbackContext):
 
         # handle all other telegram related errors
 
-def help_button(update, context):
+def lovely_button(update, context):
 
     query = update.callback_query
 
@@ -1344,7 +1344,7 @@ def main():
 
     lovely_handler = CommandHandler("help", get_lovely, run_async=True)
 
-    help_callback_handler = CallbackQueryHandler(help_button, pattern=r"help_.*", run_async=True)
+    lovely_callback_handler = CallbackQueryHandler(help_button, pattern=r"lovely_.*", run_async=True)
 
     settings_handler = CommandHandler("settings", get_settings, run_async=True)
 
