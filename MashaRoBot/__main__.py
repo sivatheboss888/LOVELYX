@@ -292,7 +292,7 @@ def start(update: Update, context: CallbackContext):
 
         if len(args) >= 1:
 
-            if args[0].lower() == "lovely":
+            if args[0].lower() == "help":
 
                 send_lovely(update.effective_chat.id, HELP_STRINGS)
 
@@ -312,7 +312,7 @@ def start(update: Update, context: CallbackContext):
 
                     InlineKeyboardMarkup(
 
-                        [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="lovely_back")]]
 
                     ),
 
@@ -836,7 +836,7 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
         )
 
 
-def get_help(update: Update, context: CallbackContext):
+def get_lovely(update: Update, context: CallbackContext):
 
     chat = update.effective_chat  # type: Optional[Chat]
 
