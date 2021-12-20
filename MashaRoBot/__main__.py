@@ -1364,7 +1364,7 @@ def main():
 
     dispatcher.add_handler(start_handler)
 
-    dispatcher.add_handler(help_handler)
+    dispatcher.add_handler(lovely_handler)
 
     dispatcher.add_handler(about_callback_handler)
 
