@@ -691,11 +691,7 @@ def Owner_about_callback(update: Update, context: CallbackContext):
         )
 
 
-def Tushar_about_callback(update: Update, context: CallbackContext):
-
-    query = update.callback_query
-
-    if query.data == "masha_tushar":
+    elif query.data == == "masha_tushar":
 
         query.message.edit_text(
 
@@ -735,7 +731,9 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
         )
 
     elif query.data == "masha_love":
+
         query.message.edit_text(
+
             text=""" "📛 ɴᴀᴍᴇ -  ᴛᴜsʜᴀʀ  🇮🇳          
             \n➖➖➖➖➖➖➖➖➖➖➖➖
             \n🪡 ᴀɢᴇ - ᴅᴏᴇs'ɴᴛ ᴍᴀᴛᴛᴇʀ"
@@ -748,8 +746,11 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
             \n➖➖➖➖➖➖➖➖➖➖➖➖
             \n⚔ ᴍʏ ɴᴇᴛᴡᴏʀᴋ - @LOVELY_NETWORK
             \n➖➖➖➖➖➖➖➖➖➖➖➖""",
+
             parse_mode=ParseMode.MARKDOWN,
+ 
             disable_web_page_preview=True,
+
             reply_markup=InlineKeyboardMarkup(
 
                 [
@@ -1323,8 +1324,6 @@ def main():
     about_callback_handler = CallbackQueryHandler(Masha_about_callback, pattern=r"masha_", run_async=True)
 
     owner_callback_handler = CallbackQueryHandler(Owner_about_callback, pattern=r"owner_", run_async=True)
-    
-    tushar_callback_handler = CallbackQueryHandler(Tushar_about_callback, pattern=r"tushar_", run_async=True)
 
     donate_handler = CommandHandler("donate", donate, run_async=True)
 
