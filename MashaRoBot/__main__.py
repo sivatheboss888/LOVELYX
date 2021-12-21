@@ -735,26 +735,21 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
         )
 
     elif query.data == "love_":
-
         query.message.edit_text(
-
-            text=""" "📛 ɴᴀᴍᴇ -  ᴛᴜsʜᴀʀ  🇮🇳"            
-            "\n➖➖➖➖➖➖➖➖➖➖➖➖"
-            "\n🪡 ᴀɢᴇ - ᴅᴏᴇs'ɴᴛ ᴍᴀᴛᴛᴇʀ"
-            "\n➖➖➖➖➖➖➖➖➖➖➖➖"
-            "\n👩‍❤️‍👨 sᴛᴀᴛᴜs - sɪɴɢʟᴇ"
-            "\n➖➖➖➖➖➖➖➖➖➖➖➖"
-            "\n🇮🇳 ғʀᴏᴍ - ɪɴᴅɪᴀ"
-            "\n➖➖➖➖➖➖➖➖➖➖➖➖"
-            "\n🖇 ᴜsᴇʀɴᴀᴍᴇ - @TUSHAR204",
-            "\n➖➖➖➖➖➖➖➖➖➖➖➖"
-            "\n⚔ ᴍʏ ɴᴇᴛᴡᴏʀᴋ - @LOVELY_NETWORK"
-            "\n➖➖➖➖➖➖➖➖➖➖➖➖" """,
-
+            text=""" "📛 ɴᴀᴍᴇ -  ᴛᴜsʜᴀʀ  🇮🇳          
+            \n➖➖➖➖➖➖➖➖➖➖➖➖
+            \n🪡 ᴀɢᴇ - ᴅᴏᴇs'ɴᴛ ᴍᴀᴛᴛᴇʀ"
+            \n➖➖➖➖➖➖➖➖➖➖➖➖
+            \n👩‍❤️‍👨 sᴛᴀᴛᴜs - sɪɴɢʟᴇ"
+            \n➖➖➖➖➖➖➖➖➖➖➖➖
+            \n🇮🇳 ғʀᴏᴍ - ɪɴᴅɪᴀ"
+            \n➖➖➖➖➖➖➖➖➖➖➖➖
+            \n🖇 ᴜsᴇʀɴᴀᴍᴇ - @TUSHAR204",
+            \n➖➖➖➖➖➖➖➖➖➖➖➖
+            \n⚔ ᴍʏ ɴᴇᴛᴡᴏʀᴋ - @LOVELY_NETWORK
+            \n➖➖➖➖➖➖➖➖➖➖➖➖""",
             parse_mode=ParseMode.MARKDOWN,
-
             disable_web_page_preview=True,
-
             reply_markup=InlineKeyboardMarkup(
 
                 [
