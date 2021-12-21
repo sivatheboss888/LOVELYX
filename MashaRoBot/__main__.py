@@ -783,56 +783,31 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
         )
 
-
     elif query.data == "supports_":
-
         query.message.edit_text(
-
             text=""" Join my Support Group/Update Channel to see new updates or report your problems.
                  """,
-
             parse_mode=ParseMode.MARKDOWN,
-
             disable_web_page_preview=False,
-
             reply_markup=InlineKeyboardMarkup(
-
                 [
-
                  [
-
                    InlineKeyboardButton(
-
                         text="sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url="t.me/LOVELYAPPEAL"),
-
                    InlineKeyboardButton( 
-
                         text="ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ", url="t.me/LOVELY_ROBOTS"),
-
                  ],
-
                  [
-
                    InlineKeyboardButton(
-
                         text="ɢʟᴏʙᴀʟ ʟᴏɢᴅ", url="https://t.me/LOV3LYLOGS"),
-
                    InlineKeyboardButton(
-
                         text="ʟᴏᴠᴇʟʏ ᴅᴇᴠs", url="https://t.me/LOVELY_DEVS"),
-
                  ],
-
                  [
-
                     InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="masha_")
-
                  ]
-
                 ]
-
             ),
-
         )
 
 
