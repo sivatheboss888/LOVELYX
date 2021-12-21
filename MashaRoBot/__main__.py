@@ -695,7 +695,7 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
     query = update.callback_query
 
-    if query.data == "tushar_":
+    if query.data == "masha_tushar":
 
         query.message.edit_text(
 
@@ -758,7 +758,7 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
                    InlineKeyboardButton(
 
-                        text="ɢʀᴇᴀᴛ ᴏᴡɴᴇʀ", callback_data="tushar_"),
+                        text="ɢʀᴇᴀᴛ ᴏᴡɴᴇʀ", callback_data="masha_tushar"),
 
                    InlineKeyboardButton( 
 
