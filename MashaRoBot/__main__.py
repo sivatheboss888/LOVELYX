@@ -604,7 +604,7 @@ If you have any question about Lovely, let us know at @LOVELYAPPEAL.""",
 
                    InlineKeyboardButton(
 
-                        text="sᴜᴘᴘᴏʀᴛ", callback_data="masha_supports"),
+                        text="sᴜᴘᴘᴏʀᴛ", callback_data="supports_"),
 
                    InlineKeyboardButton(
 
@@ -674,7 +674,7 @@ def Owner_about_callback(update: Update, context: CallbackContext):
 
                    InlineKeyboardButton(
 
-                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", callback_data="masha_love"),
+                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", callback_data="love"),
 
                  ],
 
@@ -734,7 +734,7 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
         )
 
-    elif query.data == "masha_love":
+    elif query.data == "love_":
         query.message.edit_text(
             text=""" "📛 ɴᴀᴍᴇ -  ᴛᴜsʜᴀʀ  🇮🇳          
             \n➖➖➖➖➖➖➖➖➖➖➖➖
@@ -778,7 +778,7 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
         )
 
-    elif query.data == "masha_supports":
+    elif query.data == "supports_":
         query.message.edit_text(
             text=""" Join my Support Group/Update Channel to see new updates or report your problems.
                  """,
@@ -1323,6 +1323,10 @@ def main():
     about_callback_handler = CallbackQueryHandler(Masha_about_callback, pattern=r"masha_", run_async=True)
 
     owner_callback_handler = CallbackQueryHandler(Owner_about_callback, pattern=r"owner_", run_async=True)
+    
+    love_callback_handler = CallbackQueryHandler(Love_about_callback, pattern=r"love_", run_async=True)
+    
+    supports_callback_handler = CallbackQueryHandler(Supports_about_callback, pattern=r"supports_", run_async=True)
 
     tushar_callback_handler = CallbackQueryHandler(Tushar_about_callback, pattern=r"tushar_", run_async=True)
 
