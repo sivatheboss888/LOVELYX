@@ -604,7 +604,7 @@ If you have any question about Lovely, let us know at @LOVELYAPPEAL.""",
 
                    InlineKeyboardButton(
 
-                        text="sᴜᴘᴘᴏʀᴛ", callback_data="supports_"),
+                        text="sᴜᴘᴘᴏʀᴛ", callback_data="masha_supports"),
 
                    InlineKeyboardButton(
 
@@ -778,7 +778,7 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
         )
 
-    elif query.data == "supports_":
+    elif query.data == "masha_supports":
         query.message.edit_text(
             text=""" Join my Support Group/Update Channel to see new updates or report your problems.
                  """,
@@ -1324,8 +1324,6 @@ def main():
 
     owner_callback_handler = CallbackQueryHandler(Owner_about_callback, pattern=r"owner_", run_async=True)
     
-    supports_callback_handler = CallbackQueryHandler(Supports_about_callback, pattern=r"supports_", run_async=True)
-
     tushar_callback_handler = CallbackQueryHandler(Tushar_about_callback, pattern=r"tushar_", run_async=True)
 
     donate_handler = CommandHandler("donate", donate, run_async=True)
