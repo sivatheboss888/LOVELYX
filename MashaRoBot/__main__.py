@@ -670,11 +670,11 @@ def Owner_about_callback(update: Update, context: CallbackContext):
 
                    InlineKeyboardButton(
 
-                        text="ᴅᴇᴠʟᴏᴘᴇʀ", callback_data="tushar_"),
+                        text="ᴅᴇᴠʟᴏᴘᴇʀ", callback_data="masha_tushar"),
 
                    InlineKeyboardButton(
 
-                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", callback_data="love"),
+                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", callback_data="masha_love"),
 
                  ],
 
@@ -714,7 +714,7 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
                    InlineKeyboardButton(
 
-                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", callback_data="love_"),
+                        text="ᴀʙᴏᴜᴛ ᴏᴡɴᴇʀ", callback_data="masha_love"),
 
                    InlineKeyboardButton( 
 
@@ -734,7 +734,7 @@ def Tushar_about_callback(update: Update, context: CallbackContext):
 
         )
 
-    elif query.data == "love_":
+    elif query.data == "masha_love":
         query.message.edit_text(
             text=""" "📛 ɴᴀᴍᴇ -  ᴛᴜsʜᴀʀ  🇮🇳          
             \n➖➖➖➖➖➖➖➖➖➖➖➖
@@ -1323,8 +1323,6 @@ def main():
     about_callback_handler = CallbackQueryHandler(Masha_about_callback, pattern=r"masha_", run_async=True)
 
     owner_callback_handler = CallbackQueryHandler(Owner_about_callback, pattern=r"owner_", run_async=True)
-    
-    love_callback_handler = CallbackQueryHandler(Love_about_callback, pattern=r"love_", run_async=True)
     
     supports_callback_handler = CallbackQueryHandler(Supports_about_callback, pattern=r"supports_", run_async=True)
 
