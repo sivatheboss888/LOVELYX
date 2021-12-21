@@ -691,7 +691,7 @@ def Owner_about_callback(update: Update, context: CallbackContext):
         )
 
 
-    elif query.data ==== "masha_tushar":
+    elif query.data == "masha_tushar":
 
         query.message.edit_text(
 
