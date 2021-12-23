@@ -46,7 +46,7 @@ __help__ = """
 
  ➲ /cs*:* Latest live scores from cricinfo
 
-📢𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 :- @TEAM_LOV3LY ❤️‍🔥
+📢𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 **:- @TEAM_LOV3LY ❤️‍🔥**
 """
 
 __mod_name__ = "Cʀɪᴄᴋᴇᴛ🏏"
