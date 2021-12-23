@@ -32,5 +32,5 @@ __help__ = """
  ➲ /encrypt*:* Encrypts The Given Text
  ➲ /decrypt*:* Decrypts Previously Ecrypted Text
 
-📢𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 *:- @TEAM_LOV3LY ❤️‍🔥*
+📢𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 **:- @TEAM_LOV3LY ❤️‍🔥**
 """
