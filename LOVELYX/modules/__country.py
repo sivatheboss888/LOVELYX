@@ -115,7 +115,8 @@ Gathered By Lovely.</b>
 __help__ = """
 I will give information about a country
 
- ➲ /country <country name>*:* Gathering info about given country
+ ➲ /country `<country name>`*:* Gathering info about given country
+📢𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 :- @LOVELY_NETWORK ❤️‍🔥
 """
 
 __mod_name__ = "Cᴏᴜɴᴛʀʏ🇮🇳"
